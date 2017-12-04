@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Roboto Light";
+
+  src: url("../fonts/Roboto-Light.eot") format("eot"), url("../fonts/Roboto-Light.otf") format("opentype"), url("../fonts/Roboto-Light.svg#GothamBold") format("svg"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cabin Bold";
+
+  src: url("../fonts/Cabin-Bold.eot") format("eot"), url("../fonts/Cabin-Bold.otf") format("opentype"), url("../fonts/Cabin-Bold.svg#CabinBold") format("svg"), url("../fonts/Cabin-Bold.ttf") format("truetype"), url("../fonts/Cabin-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cabin Medium";
+
+  src: url("../fonts/Cabin-Medium.eot") format("eot"), url("../fonts/Cabin-Medium.otf") format("opentype"), url("../fonts/Cabin-Medium.svg#CabinMedium") format("svg"), url("../fonts/Cabin-Medium.ttf") format("truetype"), url("../fonts/Cabin-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cabin Regular";
+
+  src: url("../fonts/Cabin-Regular.eot") format("eot"), url("../fonts/Cabin-Regular.otf") format("opentype"), url("../fonts/Cabin-Regular.svg#CabinRegular") format("svg"), url("../fonts/Cabin-Regular.ttf") format("truetype"), url("../fonts/Cabin-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+
+  src: url("../fonts/PT-Sans.eot") format("eot"), url("../fonts/PT-Sans.otf") format("opentype"), url("../fonts/PT-Sans.svg#PTSans") format("svg"), url("../fonts/PT-Sans.ttf") format("truetype"), url("../fonts/PT-Sans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Georgia";
+
+  src: url("../fonts/Georgia.eot") format("eot"), url("../fonts/Georgia.otf") format("opentype"), url("../fonts/Georgia.svg#Georgia") format("svg"), url("../fonts/Georgia.ttf") format("truetype"), url("../fonts/Georgia.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/MaterialIcons-Regular.eot") format("eot"), url("../fonts/MaterialIcons-Regular.ijmap") format("ijmap"), url("../fonts/MaterialIcons-Regular.svg#MaterialIconsRegular") format("svg"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.woff2") format("woff2");;
+}
