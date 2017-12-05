@@ -1,0 +1,42 @@
+<figure class="featured-thumbnail thumbnail thumbnail__portfolio"
+                              <a class ="image-wrap" href="#lightbox" data-toggle="modal" data-slide-to="0">
+                                <img src="../imagenes/servicios/img-15-600X380.jpg">
+                                <span class="zoom-icon"></span>
+                              </a>
+                            </figure>
+                          <div class="modal fade and carousel slide" id="lightbox">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#lightbox" data-slide-to="0" class="active"></li>
+                                    <li data-target="#lightbox" data-slide-to="1"></li>
+                                    <li data-target="#lightbox" data-slide-to="2"></li>
+                                  </ol>
+                                  <div class="carousel-inner">
+                                    <div class="item active">
+                                      <img src="../imagenes/servicios/img-15-600x380.jpg" alt="First slide">
+                                    </div>
+                                    <div class="item">
+                                      <img src="../imagenes/servicios/img-14-600x380.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="item">
+                                      <img src="../imagenes/servicios/img-7-600x380.jpg" alt="Third slide">
+                                      <div class="carousel-caption"><p>Slideshow Format</p></div>
+                                    </div>
+                                  </div>
+                                  <!-- /.carousel-inner -->
+                                  <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                  </a>
+                                  <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                  </a>
+                                </div>
+                                <!-- /.modal-body -->
+                              </div>
+                              <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                          </div>
+                          <!-- /.modal -->
