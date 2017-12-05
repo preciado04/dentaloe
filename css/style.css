@@ -2339,6 +2339,56 @@ div[id^="ekkoLightbox-"] {
   border: none;
 }
 
+.grid_gallery {
+  margin-bottom: -1px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.grid_gallery, .jp-audio, .jp-video, article.testimonial {
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.grid_gallery_inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery_item {
+  float: left;
+  width: 33%;
+  margin: 0;
+  padding: 0 1px 1px 0;
+}
+
+.single-gallery-item {
+  margin: 0 !important;
+}
+
+.gallery_item.featured-thumbnail {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.comment-holder {
+  padding: 0;
+  margin: 0 0 32px;
+}
+
+.comment-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 /* End General styles */
 
