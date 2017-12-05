@@ -130,7 +130,6 @@ $(document).ready(function() {
     }
   });
 
-
   /* Video player controls */
 
   //return a jQuery object
