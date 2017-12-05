@@ -2390,6 +2390,11 @@ div[id^="ekkoLightbox-"] {
   list-style-type: none;
 }
 
+.comments-h {
+  padding: 0;
+  margin: 0;
+}
+
 /* End General styles */
 
 /* Loading */
@@ -4806,7 +4811,6 @@ html.rd-navbar-fixed-linked .page {
   /*.rd-navbar-fixed .rd-navbar-nav {
     transition: all 0.3s ease 1s;
   }*/
-
 
   .rd-navbar-fixed .rd-navbar-nav > li:hover > ul {
     display: block;
