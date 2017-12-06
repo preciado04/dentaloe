@@ -66,7 +66,7 @@ header .modal * + form {
 }
 
 header .modal-backdrop {
-  z-index: 1079;/*1079*/
+  z-index: 1079;
 }
 
 /* Main Styles */
@@ -2048,6 +2048,10 @@ article .quote-wrap blockquote {
   color:#f3594f;
   text-decoration: underline;
   cursor: pointer;
+}
+div[id^="ekkoLightbox-"] {
+  padding-right: 0 !important;
+  margin-top: 120px;
 }
 /*
 .modal-body {
