@@ -5492,4 +5492,7 @@ html.rd-navbar-fixed-linked .page {
   right: 0;
   }
 
-
+li.slideshow .grid_gallery figure img,
+li.gallery-format .grid_gallery figure img {
+  display: none;
+}
