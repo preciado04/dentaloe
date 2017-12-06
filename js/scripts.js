@@ -220,8 +220,8 @@ $(document).ready(function() {
   
 });
 
-$('.rd-navbar--has-dropdown').hover(function () {
+/*$('.rd-navbar--has-dropdown').hover(function () {
   //There'll be requests
   $(this).children('ul').addClass('active');
-  /*alert('el selector funciona');*/
-});
+  /*alert('el selector funciona');*//*
+});*/
