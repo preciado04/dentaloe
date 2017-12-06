@@ -2519,6 +2519,11 @@ div[id^="ekkoLightbox-"] {
   text-transform: none;
 }
 
+li.slideshow > .grid_gallery > figure > img,
+li.gallery-format > .grid_gallery > figure > img {
+  display: none;
+}
+
 /* End General styles */
 
 /* Loading */
