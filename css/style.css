@@ -4815,7 +4815,7 @@ html.rd-navbar-fixed-linked .page {
   content: "\e325";
 }
 /* Sidebar Layout */
-/*
+
 @media (min-width: 768px) {
   .rd-navbar-fixed .rd-navbar-aside,
   .rd-navbar-fixed .rd-navbar-nav-wrap {
@@ -4836,7 +4836,7 @@ html.rd-navbar-fixed-linked .page {
     visibility: visible;
     width: 100%;
     background: #ea4a31;
-    z-index: 999;/*999*//*
+    z-index: 999;/*999*/
     margin-top: -61px;
   }
 
@@ -4931,7 +4931,7 @@ html.rd-navbar-fixed-linked .page {
 
   /*.rd-navbar-fixed .rd-navbar-nav {
     transition: all 0.3s ease 1s;
-  }*//*
+  }*/
 
   .rd-navbar-fixed .rd-navbar-nav > li:hover > ul > li > a {
     color: #797979;
@@ -4951,7 +4951,7 @@ html.rd-navbar-fixed-linked .page {
   .rd-navbar-nav-wrap.toggle-original-elements {
     padding: 0;
     margin-top: 18px;
-    height: 150px; /*50px*//*
+    height: 50px; /*50px*/
   }
 
   .rd-navbar-search-toggled .rd-navbar-search-toggle::before,
@@ -4967,7 +4967,7 @@ html.rd-navbar-fixed-linked .page {
     top: -75px;
   }
 
-  .rd-navbar-fixed .rd-navbar-nav li .rd-navbar-dropdown.active {
+  .rd-navbar-fixed .rd-navbar-nav li .rd-navbar-dropdown {
     display: block;
     opacity: 1;
     overflow: visible;
@@ -4993,7 +4993,7 @@ html.rd-navbar-fixed-linked .page {
     top: 62px;
     left: 40%;
   }
-}*/
+}
 
 /* End RD Navbar */
 
