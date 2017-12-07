@@ -290,17 +290,6 @@ $(document).ready(function() {
     return false;
   });
 */ 
-  /* Hide label in search input */
-  $("#rd-navbar-search-form-input").on({
-    keydown: function() {
-      $(".form-label.rd-input-label").hide();
-    },
-    keyup: function() {
-      if($("#rd-navbar-search-form-input").val() == "") {
-        $(".form-label.rd-input-label").show();
-      }
-    }
-  });
 
   /* Audio player controls */
 //return a jQuery object
@@ -485,4 +474,16 @@ $(document).ready(function(){
     $(this).removeClass("active");
   }
   $(this).addClass("active");
+});
+
+/* Hide label in search input */
+$("#rd-navbar-search-form-input").on({
+  keydown: function() {
+    $(".form-label.rd-input-label").hide();
+  },
+  keyup: function() {
+    if($("#rd-navbar-search-form-input").val() == "") {
+      $(".form-label.rd-input-label").show();
+    }
+  }
 });
