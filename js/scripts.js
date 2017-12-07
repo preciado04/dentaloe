@@ -209,6 +209,11 @@ $(document).ready(function() {
   $('.jp-video .jp-play-bar').css('width', percentage+'%');
   //update HTML5 video current play time text
   $('.jp-video .current').text((video[0].currentTime).toFixed(2));
+  if (currentPos == maxduration) {
+    if($('.jp-video .jp-pause').length > 0) {
+      $('.jp-video .jp-pause').removeClass('jp-pause').addClass('jp-play');
+    }
+  }
   });
 
   var timeDrag = false;   /* Drag status */
@@ -263,7 +268,7 @@ $(document).ready(function() {
  
   //Volume control clicked
   $('.jp-video .jp-volume-bar').on('mousedown', function(e) {
-    var volume = $('.jp-video .jp-volume-bar-value');
+    var volume = $('.jp-video .jp-volume-bar');
     var position = e.pageX - volume.offset().left;
     var percentage = 100 * position / volume.width();
     $('.jp-video .jp-volume-bar-value').css('width', percentage+'%');
@@ -283,28 +288,6 @@ $(document).ready(function() {
     return false;
   });
 */ 
-
-  /* Audio player controls */
-/*
-  var audio = $('#jp_audio_1');
-  $('.jp-audio .jp-play').on('click', function() {
-    if(audio[0].paused) {
-      audio[0].play();
-    }
-    else {
-      audio[0].pause();
-    }
-    return false;
-  });
-*/
-
-/*
-  $('.jp-audio .jp-stop').on('click', function() {
-    audio[0].pause();
-    audio[0].currentTime = 0;
-  });
-*/
-
   /* Hide label in search input */
   $("#rd-navbar-search-form-input").on({
     keydown: function() {
@@ -357,12 +340,12 @@ $(document).ready(function() {
     }
     return false;
   });
-  //get HTML5 video time duration
+  //get HTML5 audio time duration
   audio.on('loadedmetadata', function() {
     $('.jp-audio .duration').text((audio[0].duration).toFixed(2));
   });
   
-  //update HTML5 video current play time
+  //update HTML5 audio current play time
   audio.on('timeupdate', function() {
   var currentPos = audio[0].currentTime; //Get currenttime
   var maxduration = audio[0].duration; //Get audio duration
@@ -370,6 +353,11 @@ $(document).ready(function() {
   $('.jp-audio .jp-play-bar').css('width', percentage+'%');
   //update HTML5 video current play time text
   $('.jp-audio .current').text((audio[0].currentTime).toFixed(2));
+  if (currentPos == maxduration) {
+    if($('.jp-audio .jp-pause').length > 0) {
+      $('.jp-audio .jp-pause').removeClass('jp-pause').addClass('jp-play');
+    }
+  }
   });
 
   var audioTimeDrag = false;   /* Drag status */
