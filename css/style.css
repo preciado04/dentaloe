@@ -1927,7 +1927,7 @@ article .quote-wrap blockquote {
   text-transform: uppercase;
 }
 
-.filter-wrapper .filter {
+.filter-wrapper .filtros {
   margin: 0;
 }
 
@@ -1940,18 +1940,18 @@ article .quote-wrap blockquote {
 }
 
 @media (max-width: 767px) {
-  .filter-wrapper .filter li {
+  .filter-wrapper .filtros li {
     display: block;
     float: none;
   }
 }
 
-.filter-wrapper .filter li {
+.filter-wrapper .filtros li {
   margin: 0 0 0 20px;
 }
 
 @media (max-width: 979px) {
-  .filter-wrapper .filter li {
+  .filter-wrapper .filtros li {
     margin: 0 20px 0 0;
   }
 }
@@ -1962,14 +1962,14 @@ article .quote-wrap blockquote {
   }
 }
 
-.filter-wrapper .filter .active a {
+.filter-wrapper .filtros .active a {
   text-decoration: none;
   box-shadow: none;
   color: #f3594f;
   background: none;
 }
 
-.filter-wrapper .filter li a {
+.filter-wrapper .filtros li a {
   color: #474747;
   font: 18px/1.2em sans-serif;
   padding: 0;
@@ -1980,16 +1980,17 @@ article .quote-wrap blockquote {
   border-bottom: none;
 }
 
-.filter-wrapper .filter li a:active,
-.filter-wrapper .filter li a:hover,
-.filter-wrapper .filter li a:focus {
+.filter-wrapper .filtros li a:active,
+.filter-wrapper .filtros li a:hover,
+.filter-wrapper .filtros li a:focus {
   text-decoration:none;
   box-shadow:none;
   color:#f3594f;
   background:none;
+  cursor: pointer;
 }
 
-.filter-wrapper .filter .active a {
+.filter-wrapper .filtros .active a {
   text-decoration:none;
   box-shadow:none;
   color:#f3594f;
