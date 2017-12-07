@@ -440,16 +440,19 @@ $(window).resize(function() {
 });
 
 /* Second level menu desktop */
-var $ul_flag = 0;
-var $li = null;
+$('.rd-navbar--has-dropdown').hover(function() { //mouse enter
 
-$('.rd-navbar--has-dropdown').mouseover(function(){
-  $('.rd-navbar--has-dropdown').removeClass('focus');
-  $(this).addClass('focus');
-});
+  clearTimeout(hoverTimeout); //remove timeout, we're taking over control
+  $('.rd-navbar--has-dropdown').removeClass('focus'); //clear all that are hovered
+  $(this).addClass('focus'); //add class to all our parents
 
-$('.rd-navbar--has-dropdown').mouseout(function(){
-  $(this).removeClass('focus');
+},function() { //mouse leave
+
+  var $this=$(this); //create local copy
+  hoverTimeout = setTimeout(function() {
+    $this.removeClass('focus'); //un-hover all parents
+  },1000); //1 second after we remove our mouse
+
 });
 
 /* Search button in desktop */
