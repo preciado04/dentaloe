@@ -445,6 +445,42 @@ $('.rd-navbar--has-dropdown').mouseover(function(){
   $(this).addClass('focus');
 });
 
+$flag_li = 0;
+$flag_ul = 0;
+$('.rd-navbar--has-dropdown').mouseleave(function(){
+  $flag_li = 1;
+});
+$('.rd-navbar-dropdown').mouseover(function(){
+  $flag_ul = 1;
+});
+
+$('.rd-navbar--has-dropdown').mouseout(function(){
+  $li = $(this);
+  $('.rd-navbar-dropdown').hover(function(){
+    $flag_ul = 1;
+  });
+  if ($flag_li == 1 && $flag_ul == 0 ) {
+    setTimeout(function () {
+      $li.removeClass('focus');
+    }, 1000);
+  }
+  /*if ($('.rd-navbar--has-dropdown').hasClass('focus')) {
+    $li.removeClass('focus');
+  } else {
+    setTimeout(function () {
+      $li.removeClass('focus');
+    }, 2000);
+  }*//*
+  $('.rd-navbar-dropdown').mouseover(function(){
+    $flag_ul = 1;
+  });
+  if ($flag_ul == 0) {
+    setTimeout(function () {
+      $li.removeClass('focus');
+    }, 2000);
+  }*/
+});
+
 /* Search button in desktop */
 $('.rd-navbar-search-toggle').click(function () {
   $(this).toggleClass('active');
