@@ -232,13 +232,13 @@ body {
 
 @media (min-width: 992px) {
   .content-holder .container:first-child {
-    margin-top: 170px;
+    margin-top: 150px;
   }
 }
 
 @media (min-width: 1200px) {
   .content-holder .container:first-child {
-    margin-top: 120px;
+    margin-top: 70px;
   }
 }
 
@@ -2527,6 +2527,10 @@ div[id^="ekkoLightbox-"] {
   text-transform: none;
 }
 
+.material-icons-phone_iphone {
+  color: #fff;
+}
+
 /* End General styles */
 
 /* Loading */
@@ -2553,7 +2557,7 @@ div[id^="ekkoLightbox-"] {
   transition: .3s all ease;
   opacity: 1;
   visibility: visible;
-  z-index: 1031;
+  z-index: 1072;
 }
 
 #page-loader.loaded {
@@ -4834,8 +4838,6 @@ html.rd-navbar-fixed-linked .page {
     transition: all 0s;
   }
 }
-
-
 
 @media (min-width: 992px) {
   .rd-navbar-fixed .rd-navbar-aside__toggle,
