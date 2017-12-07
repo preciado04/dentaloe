@@ -448,19 +448,8 @@ $('.rd-navbar--has-dropdown').mouseover(function(){
   $(this).addClass('focus');
 });
 
-$flag_li = 0;
-$flag_ul = 0;
-$('.rd-navbar--has-dropdown').mouseleave(function(){
-  $flag_li = 1;
-});
-$('.rd-navbar-dropdown').mouseover(function(){
-  $flag_ul = 1;
-});
-
 $('.rd-navbar--has-dropdown').mouseout(function(){
-  $('.rd-navbar--has-dropdown').mouseout(function(){
-    
-  });
+  $(this).removeClass('focus');
 });
 
 /* Search button in desktop */
