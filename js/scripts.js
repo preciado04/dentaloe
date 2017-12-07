@@ -440,6 +440,9 @@ $(window).resize(function() {
 });
 
 /* Second level menu desktop */
+var $ul_flag = 0;
+var $li = null;
+
 $('.rd-navbar--has-dropdown').mouseover(function(){
   $('.rd-navbar--has-dropdown').removeClass('focus');
   $(this).addClass('focus');
@@ -455,30 +458,9 @@ $('.rd-navbar-dropdown').mouseover(function(){
 });
 
 $('.rd-navbar--has-dropdown').mouseout(function(){
-  $li = $(this);
-  $('.rd-navbar-dropdown').hover(function(){
-    $flag_ul = 1;
+  $('.rd-navbar--has-dropdown').mouseout(function(){
+    
   });
-  if ($flag_li == 1 && $flag_ul == 0 ) {
-    setTimeout(function () {
-      $li.removeClass('focus');
-    }, 1000);
-  }
-  /*if ($('.rd-navbar--has-dropdown').hasClass('focus')) {
-    $li.removeClass('focus');
-  } else {
-    setTimeout(function () {
-      $li.removeClass('focus');
-    }, 2000);
-  }*//*
-  $('.rd-navbar-dropdown').mouseover(function(){
-    $flag_ul = 1;
-  });
-  if ($flag_ul == 0) {
-    setTimeout(function () {
-      $li.removeClass('focus');
-    }, 2000);
-  }*/
 });
 
 /* Search button in desktop */
