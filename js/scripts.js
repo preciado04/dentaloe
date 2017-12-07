@@ -440,6 +440,7 @@ $(window).resize(function() {
 });
 
 /* Second level menu desktop */
+var hoverTimeout;
 $('.rd-navbar--has-dropdown').hover(function() { //mouse enter
 
   clearTimeout(hoverTimeout); //remove timeout, we're taking over control
