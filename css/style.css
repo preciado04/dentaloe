@@ -1629,6 +1629,10 @@ div.jp-current-time {
   color: #ffffff;
 }
 
+div.jp-current-time span {
+  color: #777;
+}
+
 div.jp-time-sep {
   display: inline;
   float: right;
@@ -1642,6 +1646,10 @@ div.jp-duration {
   float: right;
   margin-right: 130px;
   text-align: right;
+}
+
+div.jp-duration span {
+  color: #777;
 }
 
 div.jp-audio div.jp-duration {
@@ -5492,6 +5500,10 @@ html.rd-navbar-fixed-linked .page {
 li.slideshow .grid_gallery figure img,
 li.gallery-format .grid_gallery figure img {
   display: none;
+}
+
+.modal {
+  z-index: 1071;
 }
 
 .modal-content {
