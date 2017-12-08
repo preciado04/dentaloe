@@ -200,7 +200,7 @@ $(document).ready(function() {
   });
   //get HTML5 video time duration
   video.on('loadedmetadata', function() {
-    $('.jp-video .duration').text((video[0].duration).toFixed(2));
+    $('.jp-video .duration').text('00:'+(video[0].duration).toFixed());
   });
   
   //update HTML5 video current play time
@@ -211,10 +211,10 @@ $(document).ready(function() {
   $('.jp-video .jp-play-bar').css('width', percentage+'%');
   //update HTML5 video current play time text
   if (currentPos < 10) {
-  $('.jp-video .current').text('0'+(video[0].currentTime).toFixed(2));
+  $('.jp-video .current').text('00:0'+(video[0].currentTime).toFixed());
   }
   else {
-    $('.jp-video .current').text((video[0].currentTime).toFixed(2));
+    $('.jp-video .current').text('00:'+(video[0].currentTime).toFixed());
   }
   if (currentPos == maxduration) {
     if($('.jp-video .jp-pause').length > 0) {
@@ -338,7 +338,7 @@ $(document).ready(function() {
   });
   //get HTML5 audio time duration
   audio.on('loadedmetadata', function() {
-    $('.jp-audio .duration').text((audio[0].duration).toFixed(2));
+    $('.jp-audio .duration').text('00:'+(audio[0].duration).toFixed());
   });
   
   //update HTML5 audio current play time
@@ -348,11 +348,11 @@ $(document).ready(function() {
   var percentage = 100 * currentPos / maxduration; //in %
   $('.jp-audio .jp-play-bar').css('width', percentage+'%');
   //update HTML5 video current play time text
-  if (currentPos < 10) {
-  $('.jp-audio .current').text('0'+(audio[0].currentTime).toFixed(2));
+  if (currentPos < 10 ) {
+  $('.jp-audio .current').text('00:0'+(audio[0].currentTime).toFixed());
   }
-  else{
-    $('.jp-audio .current').text((audio[0].currentTime).toFixed(2));
+  else {
+    $('.jp-audio .current').text('00:'+(audio[0].currentTime).toFixed());
   }
   if (currentPos == maxduration) {
     if($('.jp-audio .jp-pause').length > 0) {
