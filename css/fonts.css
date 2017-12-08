@@ -5,19 +5,7 @@
 }
 
 @font-face {
-  font-family: "Cabin Bold";
-
-  src: url("../fonts/Cabin-Bold.eot") format("eot"), url("../fonts/Cabin-Bold.otf") format("opentype"), url("../fonts/Cabin-Bold.svg#CabinBold") format("svg"), url("../fonts/Cabin-Bold.ttf") format("truetype"), url("../fonts/Cabin-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Cabin Medium";
-
-  src: url("../fonts/Cabin-Medium.eot") format("eot"), url("../fonts/Cabin-Medium.otf") format("opentype"), url("../fonts/Cabin-Medium.svg#CabinMedium") format("svg"), url("../fonts/Cabin-Medium.ttf") format("truetype"), url("../fonts/Cabin-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Cabin Regular";
+  font-family: "Cabin";
 
   src: url("../fonts/Cabin-Regular.eot") format("eot"), url("../fonts/Cabin-Regular.otf") format("opentype"), url("../fonts/Cabin-Regular.svg#CabinRegular") format("svg"), url("../fonts/Cabin-Regular.ttf") format("truetype"), url("../fonts/Cabin-Regular.woff") format("woff");
 }

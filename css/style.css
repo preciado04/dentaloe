@@ -242,14 +242,12 @@ body {
   }
 }
 
-
-
-h1 { font: bold 50px/60px "Cabin Bold"; color: #343434; }
-h2 { font: bold 40px/48px "Cabin Bold"; color: #343434; }
-h3 { font: bold 30px/36px "Cabin Bold"; color: #343434; }
-h4 { font: bold 24px/29px "Cabin Bold"; color: #343434; }
-h5 { font: bold 20px/24px "Cabin Bold"; color: #343434; }
-h6 { font: bold 18px/22px "Cabin Bold"; color: #343434; }
+h1 { font: bold 50px/60px "Cabin"; color: #343434; }
+h2 { font: bold 40px/48px "Cabin"; color: #343434; }
+h3 { font: bold 30px/36px "Cabin"; color: #343434; }
+h4 { font: bold 24px/29px "Cabin"; color: #343434; }
+h5 { font: bold 20px/24px "Cabin"; color: #343434; }
+h6 { font: bold 18px/22px "Cabin"; color: #343434; }
 
 .main-holder, .footer {
   font: normal 16px/26px sans-serif;
@@ -290,7 +288,7 @@ div.type-page p {
   padding: 50px 0 20px;
   border-bottom: 1px solid #eaeaea;
   margin: -52px 0 0 0;
-  font: 12px/40px "PT Sans";
+  font: 12px/40px sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -318,9 +316,14 @@ div.type-page p {
 }
 
 h1.location {
-  font: bold 30px "PT Sans";
+  font: bold 30px "Cabin";
   color: #343434;
   margin-top: 70px;
+}
+
+h1.location small {
+  font-size: 28px;
+  color: #999;
 }
 
 .clear {
@@ -568,7 +571,7 @@ blockquote h6 {
   text-transform: uppercase;
   letter-spacing: 0;
   margin-top: -10px;
-  font: normal 18px/22px "Cabin Regular";
+  font: normal 18px/22px "Cabin";
 }
 
 blockquote {
@@ -708,7 +711,7 @@ div.type-page blockquote {
 }
 
 .posts-grid.team li h5 {
-  font: 12px/20px "Cabin Regular";
+  font: 12px/20px "Cabin";
   text-transform: uppercase;
 }
 
@@ -902,7 +905,7 @@ blockquote p {
   height: auto;
   border-radius: 0;
   color: #343434;
-  font: bold 50px/19px "Cabin Bold";
+  font: bold 50px/19px "Cabin";
   margin-right: 13px;
   overflow: visible;
 }
