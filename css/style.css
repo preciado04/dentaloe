@@ -816,6 +816,11 @@ article.testimonial {
   content: "";
 }
 
+.testimonial_content {
+  overflow: hidden;
+  background: url("../imagenes/nosotros/quotes.png") no-repeat 0 0;
+}
+
 .testimonials.testi-about .testi-item 
 .testi-item-blockquote a {
   color: #474747;
