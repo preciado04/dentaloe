@@ -88,7 +88,7 @@ $(document).ready(function() {
   });
 
   /* Pagination Blog */
-  $('.blog #pagination').twbsPagination({
+  $('.blog#pagination').twbsPagination({
     totalPages: 4,
     onPageClick: function (event, page) {
       var tPages = 4;
@@ -138,7 +138,7 @@ $(document).ready(function() {
   });
 
   /* Pagination Services */
-  $('.services #pagination').twbsPagination({
+  $('.services#pagination').twbsPagination({
     totalPages: 4,
     onPageClick: function (event, page) {
       var tPages = 4;
@@ -495,3 +495,21 @@ $("#rd-navbar-search-form-input").on({
     }
   }
 });
+
+/* Archives Filter */
+/*
+$(".filter-files").click(function(){
+  var value = $(this).attr('data-filter');
+  $('.filters-files li').removeClass('active');
+  $(this).parent().addClass('active');
+  if (value == "all") {
+    //$('.filter').removeClass('hidden');
+    $('.filter').css('1000');
+  } else {
+    //$('.filter[filter-item="'+value+'"]').removeClass('hidden');
+    //$(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+    $(".filter").not(value).hide('3000');
+    $('.filter').filter(value).show('3000');
+  }
+});
+*/
