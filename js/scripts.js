@@ -210,7 +210,12 @@ $(document).ready(function() {
   var percentage = 100 * currentPos / maxduration; //in %
   $('.jp-video .jp-play-bar').css('width', percentage+'%');
   //update HTML5 video current play time text
-  $('.jp-video .current').text((video[0].currentTime).toFixed(2));
+  if (currentPos < 10) {
+  $('.jp-video .current').text('0'+(video[0].currentTime).toFixed(2));
+  }
+  else {
+    $('.jp-video .current').text((video[0].currentTime).toFixed(2));
+  }
   if (currentPos == maxduration) {
     if($('.jp-video .jp-pause').length > 0) {
       $('.jp-video .jp-pause').removeClass('jp-pause').addClass('jp-play');
@@ -343,7 +348,12 @@ $(document).ready(function() {
   var percentage = 100 * currentPos / maxduration; //in %
   $('.jp-audio .jp-play-bar').css('width', percentage+'%');
   //update HTML5 video current play time text
-  $('.jp-audio .current').text((audio[0].currentTime).toFixed(2));
+  if (currentPos < 10) {
+  $('.jp-audio .current').text('0'+(audio[0].currentTime).toFixed(2));
+  }
+  else{
+    $('.jp-audio .current').text((audio[0].currentTime).toFixed(2));
+  }
   if (currentPos == maxduration) {
     if($('.jp-audio .jp-pause').length > 0) {
       $('.jp-audio .jp-pause').removeClass('jp-pause').addClass('jp-play');
