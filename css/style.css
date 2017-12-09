@@ -5782,5 +5782,5 @@ li.gallery-format .grid_gallery figure img {
 }
 
 .ekko-lightbox-item img {
-  height: 450px;
+  height: auto;
 }
