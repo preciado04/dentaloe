@@ -13,11 +13,23 @@ Image credits: unsplash.com
 }
 .fade-carousel .carousel-inner .item {
     height: 100vh;
+    
+}
+.carousel-indicators {
+    position: absolute;
+    left: 0;
+    z-index: 15;
+    width: 60%;
+    margin-left: 3%;
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+    letter-spacing: 0px;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
-    background-color: #f39c12;
-    border-color: #f39c12;
+    background-color: #fff;
+    border-color: #fff;
     opacity: .7;
 }
 .fade-carousel .carousel-indicators > li.active {
