@@ -154,6 +154,23 @@ $(document).ready(function() {
     }
   });
 
+  /* Years and Months pagination */
+  $('.yearsmonths#pagination').twbsPagination({
+    totalPages: 2,
+    onPageClick: function (event, page) {
+      var tPages = 2;
+      $('li.page-item').css('display','none');
+      $("li.page-item:contains('1')").css('display','inline').addClass('first-item');
+      $("li.page-item:contains('2')").css('display','inline').addClass('last-item');
+      $('div[id^="page-"]').css('display','none');
+      var id = "page-" + page;
+      $('#'+id).css('display','block');
+      $('html,body').animate({
+        scrollTop: 0
+      }, 0);
+    }
+  });
+
   /* Video player controls */
 
   //return a jQuery object
