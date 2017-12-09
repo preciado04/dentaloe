@@ -5498,6 +5498,16 @@ html.rd-navbar-fixed-linked .page {
   margin: 15px 0 0;
 }
 
+@media (min-width: 768px) {
+  .footer h4 {
+    margin: 40px 0 42px;
+  }
+
+  .footer .copyright a img {
+    margin: 5px 0 0;
+  }
+}
+
 .footer .copyright span {
   display: block;
   font: 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
