@@ -547,6 +547,9 @@ $(".filter-files").click(function(){
   }
 });
 */
-
 /* Background hero */
-$('.location').parent('.row').addClass('bg-hero');
+$(document).ready(function () {
+  $('.location').parent('.row').addClass('bg-hero');
+});
+
+

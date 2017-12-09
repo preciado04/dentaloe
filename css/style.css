@@ -2752,7 +2752,7 @@ div[id^="flexslider"] .flex-direction-nav a:before {
 }
 
 .bg-hero {
-  background: url("..(imagenes/bg-hero.jpg") no-repeat 50% 75%;
+  background: url("../imagenes/bg-hero.jpg") no-repeat 50% 75%;
 }
 /* End General styles */
 
