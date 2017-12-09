@@ -25,10 +25,13 @@ Image credits: unsplash.com
     list-style: none;
     text-align: left;
     letter-spacing: 0px;
-    margin 0 2px;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #fff;
     border-color: #fff;
     opacity: .7;
     border: solid 2px white;
