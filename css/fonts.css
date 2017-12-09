@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: "Roboto Bold";
+
+  src: url("../fonts/Roboto-Bold.eot") format("eot"), url("../fonts/Roboto-Bold.otf") format("opentype"), url("../fonts/Roboto-Bold.svg#GothamBold") format("svg"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.woff") format("woff");
+}
+
+@font-face {
   font-family: "Cabin";
 
   src: url("../fonts/Cabin-Regular.eot") format("eot"), url("../fonts/Cabin-Regular.otf") format("opentype"), url("../fonts/Cabin-Regular.svg#CabinRegular") format("svg"), url("../fonts/Cabin-Regular.ttf") format("truetype"), url("../fonts/Cabin-Regular.woff") format("woff");

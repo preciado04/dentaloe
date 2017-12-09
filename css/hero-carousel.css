@@ -13,17 +13,33 @@ Image credits: unsplash.com
 }
 .fade-carousel .carousel-inner .item {
     height: 100vh;
+    
+}
+.carousel-indicators {
+    position: absolute;
+    left: 0;
+    z-index: 15;
+    width: 60%;
+    margin-left: 3%;
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+    letter-spacing: 0px;
+    margin 0 2px;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
-    background-color: #f39c12;
-    border-color: #f39c12;
+    border-color: #fff;
     opacity: .7;
+    border: solid 2px white;
+    background:transparent;
 }
+.fade-carousel .carousel-indicators > li:hover,
 .fade-carousel .carousel-indicators > li.active {
   width: 10px;
   height: 10px;
   opacity: 1;
+  background: #fff;
 }
 
 /********************************/

@@ -209,7 +209,7 @@ body {
 
 @media (max-width: 767px) {
   body.home .content-holder {
-      padding: 0 20px !important;
+      padding: 0 20px;
   }
 }
 
@@ -222,6 +222,10 @@ body {
 .content-holder {
   background: #fff;
   padding-top: 30px;
+}
+
+.home .content-holder {
+  padding-top: 26px;
 }
 
 .content-holder {
