@@ -1,3 +1,9 @@
+/* header */
+.page-header {
+    margin: 0;
+    padding-bottom: 0;
+  }
+/*carousel */
 .fade-carousel {
   position: relative;
   height: 100vh;
@@ -150,15 +156,39 @@
 .hero h4, .hero a {
   font-family: "Roboto Light";
 }
-
+  
 /* Media Queries */
 @media screen and (min-width: 980px){
-  .hero {
-    width: 980px;
+  
+}
+
+@media (max-width:767px) {
+  .hero{
+     left: 36%;
+     top:60%; 
+   }
+   
+  .carousel-indicators {
+    top:82%; 
   }
+  .fade-carousel {
+    margin-top:55px;
+    padding: 0;
+  }
+    
+  body.home .content-holder {
+    padding: 0;
+   }
 }
 
 @media (min-width: 768px) {
+  .hero {
+    top: 45%;
+    left: 42%;
+  }
+  .carousel-indicators {
+   top:82%; 
+  }
   .hero h2 {
     font-size: 46px;
   }
@@ -166,9 +196,17 @@
  .hero h4 {
     font-size: 28px;
   }
+  .fade-carousel {
+    margin-top:28px;
+  }
 }
 
 @media (min-width: 992px) {
+  .hero {
+     left:26%;
+     top:60%; 
+   }
+   
   .hero h2 {
     font-size: 60px;
   }
@@ -177,15 +215,33 @@
     font-size: 36px;
     line-height: 1.25;
   }
+  .fade-carousel {
+    margin-top:190px;
+  }
 }
 
 @media (min-width: 1009px) {
+/*
   .rd-navbar-wrap {
     margin-bottom: 191px;
+  }
+*/
+  .hero {
+     left:45%;
+     top:39%; 
+   }
+   
+  .fade-carousel {
+    margin-top:190px;
   }
 }
 
 @media (min-width: 1200px) {
+  .hero {
+     left:26%;
+     top:60%; 
+   }
+   
   .hero h2 {
     font-size: 72px;
   }
@@ -196,5 +252,8 @@
 
   .rd-navbar-wrap {
     margin-bottom: 124px;
+  }
+  .fade-carousel {
+    margin-top:0;
   }
 }
