@@ -237,6 +237,7 @@ body.home .content-holder {
   padding: 0;
 }
 
+/* Media queries */
 
 @media (min-width: 768px) {
   .hero {
@@ -301,11 +302,8 @@ body.home .content-holder {
     font-size: 25px;
   }
 
-  .rd-navbar-wrap {
-    margin-bottom: 124px;
-  }
   .fade-carousel {
-    margin-top: 22px;
+    margin-top: 146px;
   }
 }
 
@@ -330,7 +328,8 @@ body.home .content-holder {
 .fade-carousel .slides div[class^="slide-"] {
   height: 348px;
   max-width: 1440px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 446px) {
