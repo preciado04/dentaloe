@@ -58,7 +58,7 @@ $(document).ready(function() {
 
   /* Back to top on scroll */
   if ($('#back-to-top').length) {
-    var scrollTrigger = 100, // px
+    var scrollTrigger = 200, // px
       backToTop = function () {
         var scrollTop = $(window).scrollTop();
         if (scrollTop > scrollTrigger) {
@@ -550,6 +550,20 @@ $(".filter-files").click(function(){
 /* Background hero */
 $(document).ready(function () {
   $('.location').parent('.row').addClass('bg-hero');
+});
+
+/* Add transicion to hero-carousel */
+$("#hero-carousel").on('slid.bs.carousel', function () {
+  $('.hero h4, .hero h2, .hero button').addClass('not-animated');
+  $('.hero h4').addClass('fadeInLeftSmall animated');
+  $('.hero h2').addClass('fadeInRightSmall-v2 animated');
+  $('.hero button').addClass('fadeInLeftSmall animated');
+});
+
+$(document).ready(function(){
+  $('.hero h4').addClass('fadeInLeftSmall animated');
+  $('.hero h2').addClass('fadeInRightSmall-v2 animated');
+  $('.hero button').addClass('fadeInLeftSmall animated');
 });
 
 
