@@ -340,11 +340,6 @@ body.home .content-holder {
     left: 50%;
     top: 22%;
   }
-
-  .carousel-indicators {
-    top: 85%;
-    margin-left: 10%;
-  }
 }
 
 @media (min-width: 768px) {
@@ -357,6 +352,10 @@ body.home .content-holder {
     left: 42%;
     top: 29%;
     width: 60%;
+  }
+
+  .carousel-indicators {
+    margin-left: 12%;
   }
 }
 
@@ -371,6 +370,16 @@ body.home .content-holder {
     top: 29%;
     width: 80%; 
   }
+
+  .carousel-indicators {
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 994px) {
+  .carousel-indicators {
+    margin-left: 2%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -382,5 +391,9 @@ body.home .content-holder {
   .hero {
     left: 50%;
     top: 32%; 
+  }
+
+  .carousel-indicators {
+    margin-left: 11%;
   }
 }
