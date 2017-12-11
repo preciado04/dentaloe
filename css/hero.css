@@ -46,7 +46,7 @@
 /* Hero Header */
 .hero {
   position: absolute;
-  width: 99%;
+  width: 90%;
   z-index: 3;
   color: #fff;
   text-align: left;
@@ -312,7 +312,7 @@ body.home .content-holder {
 /* Slides height */
 
 .hero {
-  left: 54%;
+  left: 50%;
   top: 21%; 
 }
 
@@ -337,8 +337,13 @@ body.home .content-holder {
   }
 
   .hero {
-    left: 54%;
-    top: 22%; 
+    left: 50%;
+    top: 22%;
+  }
+
+  .carousel-indicators {
+    top: 85%;
+    margin-left: 10%;
   }
 }
 
@@ -349,8 +354,9 @@ body.home .content-holder {
   }
 
   .hero {
-    left: 54%;
-    top: 22%; 
+    left: 42%;
+    top: 29%;
+    width: 60%;
   }
 }
 
@@ -361,8 +367,9 @@ body.home .content-holder {
   }
 
   .hero {
-    left: 54%;
-    top: 22%; 
+    left: 42%;
+    top: 29%;
+    width: 80%; 
   }
 }
 
@@ -373,7 +380,7 @@ body.home .content-holder {
   }
 
   .hero {
-    left: 54%;
+    left: 50%;
     top: 22%; 
   }
 }
