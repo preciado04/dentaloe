@@ -51,11 +51,13 @@ $(document).ready(function() {
 
   /* Menu dropdowns*/
   $('.rd-navbar-submenu-toggle').click(function(e) {
-    if (!($('.rd-navbar--has-dropdown').hasClass('opened'))) {
-      $('.rd-navbar--has-dropdown').addClass('opened');
-      $('.navbar-dentaloe .menu-list .arrow').addClass('up');
-    } else {
-      $(this).parent().removeClass('opened');
+    $(this).parent().toggleClass('opened');
+    if ($('.rd-navbar--has-dropdown').hasClass('opened')) {
+      if ($(this).parent()[0] != $('.rd-navbar--has-dropdown')[0]) {
+        $('.rd-navbar--has-dropdown').removeClass('opened');
+      } else {
+
+      }
     }
   });
 
