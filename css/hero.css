@@ -112,7 +112,7 @@
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
-  height: 480px;
+  /*height: 100vh;*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -151,7 +151,6 @@
 html:not(.lt-ie10) .not-animated {
   opacity: 0;
 }
-
 
 .fadeInRightSmall {
   animation-name: fadeInRightSmall;
@@ -310,5 +309,34 @@ html:not(.lt-ie10) .not-animated {
   }
   .fade-carousel {
     margin-top:0;
+  }
+}
+
+/* Slides height */
+.fade-carousel .slides div[class^="slide-"] {
+  height: 348px
+}
+
+@media (min-width: 446px) {
+  .fade-carousel .slides div[class^="slide-"] {
+    height: 319px
+  }
+}
+
+@media (min-width: 768px) {
+  .fade-carousel .slides div[class^="slide-"] {
+    height: 432px
+  }
+}
+
+@media (min-width: 992px) {
+  .fade-carousel .slides div[class^="slide-"] {
+    height: 474px
+  }
+}
+
+@media (min-width: 1200px) {
+  .fade-carousel .slides div[class^="slide-"] {
+    height: 478px
   }
 }
