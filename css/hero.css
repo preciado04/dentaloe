@@ -75,26 +75,8 @@
 .hero h2{
   font-size: 34px;
   color: #ea4a31;
-  margin: 10px;
-  margin-left: 0;
-}
-
-.fade-carousel .carousel-inner .item .hero {
-  opacity: 0;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s;
-      -ms-transition: 2s all ease-in-out .1s;
-       -o-transition: 2s all ease-in-out .1s;
-          transition: 2s all ease-in-out .1s;
-}
-
-.fade-carousel .carousel-inner .item.active .hero {
-  opacity: 1;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s;
-      -ms-transition: 2s all ease-in-out .1s;
-       -o-transition: 2s all ease-in-out .1s;
-          transition: 2s all ease-in-out .1s;
+  margin: 0;
+  line-height: 1.2;
 }
 
 /* Overlay */
@@ -136,6 +118,12 @@
   background-repeat: no-repeat;
 }
 
+/*
+.fade-carousel .slides {
+  height: 348px
+}
+*/
+
 .fade-carousel .slides .slide-1 {
   background-image: url("../imagenes/slider-1-slide-1-1920X700.jpg");
 }
@@ -146,6 +134,68 @@
 
 .fade-carousel .slides .slide-3 {
   background-image: url("../imagenes/slider-1-slide-3-1920X700.jpg");
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  opacity: 1;
+}
+
+.hero .animated {
+  animation-timing-function: ease-out;
+}
+
+html:not(.lt-ie10) .not-animated {
+  opacity: 0;
+}
+
+
+.fadeInRightSmall {
+  animation-name: fadeInRightSmall;
+}
+
+@keyframes fadeInRightSmall {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeftSmall {
+  animation-name: fadeInLeftSmall;
+}
+
+@keyframes fadeInLeftSmall {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInRightSmall-v2 {
+  animation-name: fadeInRightSmall-v2;
+}
+
+@keyframes fadeInRightSmall-v2 {
+  0% {
+    opacity: 0;
+    transform: translateX(90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero h2 {
@@ -175,7 +225,12 @@
     margin-top:55px;
     padding: 0;
   }
-    
+
+  .fade-carousel {
+    margin-top:55px;
+    padding: 0;
+  }
+
   body.home .content-holder {
     padding: 0;
    }
