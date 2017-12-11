@@ -144,24 +144,6 @@ html:not(.lt-ie10) .not-animated {
   margin-left: 0;
 }
 
-.fade-carousel .carousel-inner .item .hero {
-  opacity: 0;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s;
-      -ms-transition: 2s all ease-in-out .1s;
-       -o-transition: 2s all ease-in-out .1s;
-          transition: 2s all ease-in-out .1s;
-}
-
-.fade-carousel .carousel-inner .item.active .hero {
-  opacity: 1;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s;
-      -ms-transition: 2s all ease-in-out .1s;
-       -o-transition: 2s all ease-in-out .1s;
-          transition: 2s all ease-in-out .1s;
-}
-
 /* Overlay */
 /*
 .overlay {
@@ -245,7 +227,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .fade-carousel .slides .slide-1 {
-  background-image: url("../imagenes/slider-1-slide-1-1920X700.jpg");
+  background-image: url("../imagenes/slide-1-1920X700.jpg");
   background-size: cover;
   width: 358px;
   position: relative;
@@ -255,7 +237,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .fade-carousel .slides .slide-2 {
-  background-image: url("../imagenes/slider-1-slide-2-1920X700.jpg");
+  background-image: url("../imagenes/slide-2-1920X700.jpg");
   background-size: cover;
   width: 358px;
   position: relative;
@@ -265,7 +247,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .fade-carousel .slides .slide-3 {
-  background-image: url("../imagenes/slider-1-slide-3-1920X700.jpg");
+  background-image: url("../imagenes/slide-3-1920X700.jpg");
   background-size: cover;
   width: 358px;
   position: relative;
