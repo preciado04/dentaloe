@@ -313,7 +313,7 @@ body.home .content-holder {
 
 .hero {
   left: 50%;
-  top: 21%; 
+  top: 140px; 
 }
 
 .carousel-indicators {
@@ -325,32 +325,35 @@ body.home .content-holder {
   margin: 35px auto 0;
 }
 
-.carousel.fade-carousel.slide,
+.carousel.fade-carousel.slide {
+  height: 348px;
+}
+
 .fade-carousel .slides div[class^="slide-"] {
-  height: 348px
+  height: 348px;
 }
 
 @media (min-width: 446px) {
   .carousel.fade-carousel.slide,
   .fade-carousel .slides div[class^="slide-"] {
-    height: 319px
+    min-height: 319px
   }
 
   .hero {
     left: 50%;
-    top: 22%;
+    top: 140px;
   }
 }
 
 @media (min-width: 768px) {
   .carousel.fade-carousel.slide,
   .fade-carousel .slides div[class^="slide-"] {
-    height: 432px
+    min-height: 432px
   }
 
   .hero {
     left: 42%;
-    top: 29%;
+    top: 195px;
     width: 60%;
   }
 
@@ -362,12 +365,12 @@ body.home .content-holder {
 @media (min-width: 992px) {
   .carousel.fade-carousel.slide,
   .fade-carousel .slides div[class^="slide-"] {
-    height: 474px
+    min-height: 474px
   }
 
   .hero {
     left: 42%;
-    top: 29%;
+    top: 210px;
     width: 80%; 
   }
 
@@ -385,12 +388,12 @@ body.home .content-holder {
 @media (min-width: 1200px) {
   .carousel.fade-carousel.slide,
   .fade-carousel .slides div[class^="slide-"] {
-    height: 478px
+    min-height: 478px
   }
 
   .hero {
     left: 50%;
-    top: 32%; 
+    top: 250px; 
   }
 
   .carousel-indicators {
