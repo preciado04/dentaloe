@@ -70,6 +70,7 @@
   line-height: 1.35;
   margin-bottom: :0;
   padding: 0;
+  font-weight:bold;
 }
 
 .hero h2{
@@ -214,7 +215,7 @@ html:not(.lt-ie10) .not-animated {
 @media (max-width:767px) {
   .hero{
      left: 36%;
-     top:60%; 
+     top:22%; 
    }
    
   .carousel-indicators {
@@ -237,8 +238,8 @@ html:not(.lt-ie10) .not-animated {
 
 @media (min-width: 768px) {
   .hero {
-    top: 45%;
-    left: 42%;
+    top: 29%;
+    left: 40%;
   }
   .carousel-indicators {
    top:82%; 
@@ -282,7 +283,7 @@ html:not(.lt-ie10) .not-animated {
 */
   .hero {
      left:45%;
-     top:39%; 
+     top:38%; 
    }
    
   .fade-carousel {
@@ -292,8 +293,7 @@ html:not(.lt-ie10) .not-animated {
 
 @media (min-width: 1200px) {
   .hero {
-     left:26%;
-     top:60%; 
+     left:25%; 
    }
    
   .hero h2 {
