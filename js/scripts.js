@@ -7,7 +7,28 @@ $(document).ready(function() {
     $(this).toggleClass('active');
     $('.rd-navbar-fixed .rd-navbar-nav-wrap').toggleClass('active');
     $('.rd-navbar-search-wrap').toggleClass('active');
+    
+    if ($('.rd-navbar-aside__toggle').hasClass('active')) {
+      $('.rd-navbar-aside__toggle, .rd-navbar-aside').removeClass('active')
+    }
   });
+
+  /* Info Box */
+  $('.rd-navbar-aside__toggle').click(function () {
+    $(this).toggleClass('active');
+    $('.rd-navbar-aside').toggleClass('active');
+    if ($('.rd-navbar-toggle').hasClass('active')) {
+      $('.rd-navbar-toggle, .rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-search-wrap').removeClass('active');
+    }
+  });
+
+  /*$("html").click(function() {
+    $('.rd-navbar-aside__toggle').removeClass('active');
+    $('.rd-navbar-aside').removeClass('active');
+  });
+  $('.rd-navbar-aside__toggle').click(function (e) {
+    e.stopPropagation();
+  });*/
 
   $(document).keyup(function(event){
     if(event.which==27) {
@@ -29,32 +50,14 @@ $(document).ready(function() {
   });*/
 
   /* Menu dropdowns*/
-  $('.rd-navbar-submenu-toggle').click(function() {
-    $(this).parent().toggleClass('opened');
-  });
-
-  /* Arrow animations */
-  $('.navbar-dentaloe .menu-list .arrow').click(function() {
-    if ($(this).hasClass('up')) {
-      $(this).removeClass('up');
+  $('.rd-navbar-submenu-toggle').click(function(e) {
+    if (!($('.rd-navbar--has-dropdown').hasClass('opened'))) {
+      $('.rd-navbar--has-dropdown').addClass('opened');
+      $('.navbar-dentaloe .menu-list .arrow').addClass('up');
     } else {
-      $(this).addClass('up');
+      $(this).parent().removeClass('opened');
     }
   });
-
-  /* Info Box */
-  $('.rd-navbar-aside__toggle').click(function () {
-    $(this).toggleClass('active');
-    $('.rd-navbar-aside').toggleClass('active');
-  });
-
-  /*$("html").click(function() {
-    $('.rd-navbar-aside__toggle').removeClass('active');
-    $('.rd-navbar-aside').removeClass('active');
-  });
-  $('.rd-navbar-aside__toggle').click(function (e) {
-    e.stopPropagation();
-  });*/
 
   /* Back to top on scroll */
   if ($('#back-to-top').length) {

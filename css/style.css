@@ -2541,7 +2541,13 @@ div[id^="ekkoLightbox-"] {
 }
 
 .material-icons-phone_iphone {
-  color: #fff;
+  color: #898989;
+}
+
+@media (min-width: 992px) {
+  .material-icons-phone_iphone {
+    color: #fff;
+  }
 }
 
 embed, iframe, object, video {
