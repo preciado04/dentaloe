@@ -350,7 +350,7 @@ if (typeof jQuery === 'undefined') {
 
     e.preventDefault()
   }
-  /*
+  
   Carousel.prototype.cycle = function (e) {
     e || (this.paused = false)
 
@@ -362,7 +362,7 @@ if (typeof jQuery === 'undefined') {
 
     return this
   }
-  */
+  
   Carousel.prototype.getItemIndex = function (item) {
     this.$items = item.parent().children('.item')
     return this.$items.index(item || this.$active)
