@@ -2085,12 +2085,6 @@ article .quote-wrap blockquote {
   }
 }
 
-@media (min-width: 1200px) {
-  .portfolio_item_holder.col-md-4 {
-    width: 25%;
-  }
-}
-
 .filterable-portfolio li .caption h3 {
   text-shadow: none;
   margin: 15px 0 5px;
