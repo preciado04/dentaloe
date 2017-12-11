@@ -5727,7 +5727,7 @@ html.rd-navbar-fixed-linked .page {
 
 .ekko-lightbox-nav-overlay a {
   font-size: 35px;
-  padding: 0 30px;
+/*   padding: 0 30px; */
   }
 .ekko-lightbox-nav-overlay a:first-child span {
   text-align: left;
@@ -5767,8 +5767,7 @@ li.gallery-format .grid_gallery figure img {
 }
 
 .modal-header h4 {
-  display: none;
-/*
+/*   display: none; */
   position: absolute;
   top:100%;
   z-index: 2;
@@ -5776,7 +5775,6 @@ li.gallery-format .grid_gallery figure img {
   font-weight: normal;
   font-family: sans-serif;
   font-size: 16px;
-*/
 }
 
 .modal-header .close {
@@ -5803,4 +5801,8 @@ li.gallery-format .grid_gallery figure img {
 
 .ekko-lightbox-item img {
   height: auto;
+}
+.modal-dialog {
+  width: auto;
+  margin 0 auto;
 }
