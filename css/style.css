@@ -2758,6 +2758,7 @@ div[id^="flexslider"] .flex-direction-nav a:before {
 .bg-hero {
   background: url("../imagenes/bg-hero.jpg") no-repeat 50% 75%;
 }
+
 /* End General styles */
 
 /* Loading */
@@ -2964,7 +2965,7 @@ div[id^="flexslider"] .flex-direction-nav a:before {
 }
 
 .icon-xs {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .icon-sm {
@@ -4017,6 +4018,7 @@ textarea.form-input {
 
 .rd-navbar-static .rd-navbar-aside-outer {
   width: 100%;
+  height: 43px;
   max-width: inherit;
   background: #ea4a31;
   position: relative;
@@ -4078,7 +4080,7 @@ textarea.form-input {
 }
 
 .rd-navbar-static .rd-navbar-aside {
-  padding-top: 12px;
+  padding-top: 9px;
   padding-bottom: 12px;
   margin-left: -10px;
   margin-right: -10px;
