@@ -2069,9 +2069,25 @@ article .quote-wrap blockquote {
   padding-right: 10px;
 }
 
+.portfolio_item_holder.col-sm-6 {
+  width: 100%;
+}
+
 @media (min-width: 417px) {
   .portfolio_item_holder.col-sm-6 {
     width: 50%;
+  }
+}
+
+@media (min-width: 980px) {
+  .portfolio_item_holder.col-md-4 {
+    width: 33.33333333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio_item_holder.col-md-4 {
+    width: 25%;
   }
 }
 
