@@ -90,7 +90,7 @@ html:not(.lt-ie10) .not-animated {
 @keyframes fadeInRightSmall {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(200px);
   }
   100% {
     opacity: 1;
@@ -105,7 +105,7 @@ html:not(.lt-ie10) .not-animated {
 @keyframes fadeInLeftSmall {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-200px);
   }
   100% {
     opacity: 1;
@@ -120,7 +120,7 @@ html:not(.lt-ie10) .not-animated {
 @keyframes fadeInRightSmall-v2 {
   0% {
     opacity: 0;
-    transform: translateX(45px);
+    transform: translateX(90px);
   }
   100% {
     opacity: 1;
@@ -140,8 +140,8 @@ html:not(.lt-ie10) .not-animated {
 .hero h2{
   font-size: 34px;
   color: #ea4a31;
-  margin: 10px;
-  margin-left: 0;
+  margin: 0;
+  line-height: 1.2;
 }
 
 /* Overlay */
