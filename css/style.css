@@ -660,6 +660,10 @@ div.type-page blockquote {
   .featured-thumbnail {
     margin: 5px 20px 10px 0;
   }
+
+  .services .featured-thumbnail {
+    margin: 5px 0 10px 0;
+  }
 }
 
 *[class*="thumbnail"] {
@@ -1909,6 +1913,10 @@ article .quote-wrap blockquote {
   margin: 2px 0 40px;
 }
 
+.filter-wrapper .pull-right {
+  float: left !important;
+}
+
 @media (max-width: 979px) {
   .filter-wrapper .pull-right {
     float: none;
@@ -1933,10 +1941,18 @@ article .quote-wrap blockquote {
 .filter-wrapper strong {
   color: #343434;
   padding: 0;
-  font: 18px/1.2em sans-serif;
+  font: 18px/19px sans-serif;
   margin-right: 0;
   margin-top: 1px;
   text-transform: uppercase;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .filter-wrapper strong {
+    width: 10%;
+    margin-right: 25px;
+  }
 }
 
 .filter-wrapper .filtros {
@@ -2049,8 +2065,14 @@ article .quote-wrap blockquote {
 }
 
 .portfolio_item_holder {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 417px) {
+  .portfolio_item_holder.col-sm-6 {
+    width: 50%;
+  }
 }
 
 .filterable-portfolio li .caption h3 {
