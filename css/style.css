@@ -5311,7 +5311,7 @@ html.rd-navbar-fixed-linked .page {
   padding: 0;
 }
 
-.three-icons h1 {
+.three-icons h1, .one-icon h1 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -5340,9 +5340,18 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .two-cols-icon-text .three-icons .txt {
-  font-size: 16px;
+  font-size: 13px;
   color: #474747;
-  padding: 0 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.two-cols-icon-text .three-icons .txt:first-child {
+  padding-left: 0;
+}
+
+.two-cols-icon-text .three-icons .txt:last-child {
+  padding-right: 0;
 }
 
 .two-cols-icon-text .three-icons .btn-link {
@@ -5399,6 +5408,10 @@ html.rd-navbar-fixed-linked .page {
   .two-cols-icon-text .three-icons .btn-link.last {
     margin-bottom: 105px;
   }
+}
+
+.three-icons .col-3 .btn.btn-primary:last-child {
+  margin-bottom: 30px;
 }
 /* End Two-cols-icon-text */
 
@@ -5464,8 +5477,8 @@ html.rd-navbar-fixed-linked .page {
 
 @media (max-width: 767px) {
   .about .archives .archive-list div[class^="col-"] {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
