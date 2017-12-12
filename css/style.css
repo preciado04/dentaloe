@@ -5475,11 +5475,9 @@ html.rd-navbar-fixed-linked .page {
   padding: 0 0 30px 0;
 }
 
-@media (max-width: 767px) {
-  .about .archives .archive-list div[class^="col-"] {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
+.about .archives div[class^="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .bio .page-header {
