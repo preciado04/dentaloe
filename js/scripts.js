@@ -106,7 +106,25 @@ $(document).ready(function() {
   $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
+    /* Hide navbar when the modal is shown*/
+   // $('.rd-navbar-wrap').css('display','none');
   });
+  
+  /* Shown navbar when the modal is close*/
+/*
+  $(document).on('click', '.close', function(event) {
+    event.preventDefault();
+    $('.rd-navbar-wrap').css('display','block');
+  });
+*/
+  
+   /* Shown navbar when the modal is close*/
+/*
+  $(document).on('click', '.', function(event) {
+    event.preventDefault();
+    $('.rd-navbar-wrap').css('display','block');
+  });
+*/
 
   /* Pagination Blog */
   $('.blog#pagination').twbsPagination({
@@ -551,5 +569,3 @@ $(".filter-files").click(function(){
   }
 });
 */
-
-

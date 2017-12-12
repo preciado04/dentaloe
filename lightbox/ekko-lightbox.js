@@ -144,13 +144,18 @@ var Lightbox = (function ($) {
       this._$modal.on('show.bs.modal', this._config.onShow.bind(this)).on('shown.bs.modal', function () {
         _this._toggleLoading(true);
         _this._handle();
+        // hide navbar
+         $('.rd-navbar-wrap').css('display','none');
         return _this._config.onShown.call(_this);
       }).on('hide.bs.modal', this._config.onHide.bind(this)).on('hidden.bs.modal', function () {
         if (_this._galleryName) {
           $(document).off('keydown.ekkoLightbox');
           $(window).off('resize.ekkoLightbox');
+          // show navbar
+          $('.rd-navbar-wrap').css('display','block');
         }
         _this._$modal.remove();
+        $('.rd-navbar-wrap').css('display','block');
         return _this._config.onHidden.call(_this);
       }).modal(this._config);
 
@@ -234,6 +239,7 @@ var Lightbox = (function ($) {
       key: 'close',
       value: function close() {
         return this._$modal.modal('hide');
+        $('.rd-navbar-wrap').css('display','block');
       }
 
       // helper private methods
@@ -353,6 +359,7 @@ var Lightbox = (function ($) {
           this._$modalDialog.css('display', 'none');
           this._$modal.removeClass('in show');
           $('.modal-backdrop').append(this._config.loadingMessage);
+          $('.rd-navbar-wrap').css('display','block');
         } else {
           this._$modalDialog.css('display', 'block');
           this._$modal.addClass('in show');
