@@ -5457,6 +5457,12 @@ html.rd-navbar-fixed-linked .page {
     padding-left: 0;
     padding-right: 0;
   }
+  .testimonials .location {
+    margin-left: 15px;
+  }
+  .testimonials .breadcrumb{
+    margin-left: 15px
+  }
 }
 
 .about .testimonials .content{
