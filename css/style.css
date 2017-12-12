@@ -2292,6 +2292,14 @@ div[id^="ekkoLightbox-"] {
   margin: 50px 0 40px 0;
 }
 
+.related-posts h3, .comment-holder h3, #respond h3 {
+  font-size: 50px;
+  line-height: 19px;
+  margin: 50px 0 40px 0;
+  border-top: 1px solid #eaeaea;
+  padding-top: 50px;
+}
+
 @media (max-width: 480px) {
   .related-posts h3, .comment-holder h3, #respond h3 {
     font-size: 35px;
@@ -2741,14 +2749,6 @@ div[id^="flexslider"] .flex-direction-nav a:before {
   overflow: hidden;
   margin: 0 0 40px;
   padding: 0;
-}
-
-.related-posts h3, .comment-holder h3, #respond h3 {
-  font-size: 50px;
-  line-height: 19px;
-  margin: 50px 0 40px 0;
-  border-top: 1px solid #eaeaea;
-  padding-top: 50px;
 }
 
 .related-posts_list {
@@ -5510,7 +5510,31 @@ html.rd-navbar-fixed-linked .page {
   text-decoration: underline;
 }
 
+.about div.type-page h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
 
+@media (min-width: 481px) {
+  .about div.type-page h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about div.type-page h1 {
+    font-size: 30px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: 980px) {
+  .about div.type-page h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
 /* About */
 
 /* Contact */
