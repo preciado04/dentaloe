@@ -581,12 +581,3 @@ $('.rd-navbar-submenu-toggle').click(function () {
     }
 });
 */
-/* Menu dropdowns*/
-  /*
-  $('.rd-navbar-submenu-toggle').click(function(e) {
-    $(this).parent().toggleClass('opened');
-    if ($('.rd-navbar--has-dropdown').hasClass('opened')) {
-      
-    }
-  });
-  */
