@@ -1253,6 +1253,11 @@ article .post-meta i {
   padding-top: 40px;
   margin-top: 50px;
 }
+@media (max-width: 979px) and (min-width: 768px) {
+.sidebar .widget >h3 {
+    font-size: 35px;
+  }
+}
 
 [id*="categories"] ul,
 [id*="archives"] ul {
