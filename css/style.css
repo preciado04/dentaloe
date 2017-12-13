@@ -5911,6 +5911,9 @@ li.gallery-format .grid_gallery figure img {
   width: auto;
   margin 0 auto;
 }
+.gallery-post .carousel-control {
+  background-image: none;
+}
 .post .gallery-post .carousel-control {
   background-image: none;
 }
