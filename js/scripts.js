@@ -108,6 +108,7 @@ $(document).ready(function() {
     $(this).ekkoLightbox();
     /* Hide navbar when the modal is shown*/
    // $('.rd-navbar-wrap').css('display','none');
+   $('.modal-header').css('display', 'block');
   });
   
   /* Shown navbar when the modal is close*/
