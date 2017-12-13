@@ -654,6 +654,11 @@ div.type-page blockquote {
   box-sizing: border-box;
 }
 
+@media (min-width: 980px) and (max-width:991px){
+  .services {
+    width: auto;
+  }
+}
 @media (min-width: 768px) {
   .featured-thumbnail {
     margin: 5px 20px 10px 0;
@@ -662,6 +667,7 @@ div.type-page blockquote {
   .services .featured-thumbnail {
     margin: 5px 0 10px 0;
   }
+
 }
 
 *[class*="thumbnail"] {
@@ -2013,7 +2019,7 @@ article .quote-wrap blockquote {
 
 .filter-wrapper .filtros li a {
   color: #474747;
-  font: 18px/1.2em sans-serif;
+  font: 18px/1.2em  'Cabin', sans-serif;
   padding: 0;
   margin: 0;
   background: none;
@@ -5874,7 +5880,7 @@ li.gallery-format .grid_gallery figure img {
 
 .modal-header .close {
   color:lightgrey;
-  font-size: 35px;
+  font-size: 30px;
   text-shadow: none;
   opacity: 1;
   margin-bottom: 5px;
@@ -5882,6 +5888,10 @@ li.gallery-format .grid_gallery figure img {
 
 .modal-header span {
   color:lightgrey;
+}
+
+.modal-header span:hover {
+  color:white;
 }
 
 .modal-body {
@@ -5900,4 +5910,33 @@ li.gallery-format .grid_gallery figure img {
 .modal-dialog {
   width: auto;
   margin 0 auto;
+}
+.gallery-post .carousel-control {
+  background-image: none;
+}
+.gallery-post .carousel-indicators {
+  position: relative;
+  left: 0;
+  width: unset;
+  margin-left: 0;
+  text-align: left;
+  top:0;
+}
+.gallery-post .carousel-indicators li {
+  border:none;
+  background: #666;
+  margin-top:15px;
+  margin:0;
+  margin-right: 10px;
+}
+
+.gallery-post .carousel-indicators li:hover {
+  background: black;
+}
+
+.gallery-post .carousel-indicators .active {
+  background: black;
+  width: 10px;
+  height: 10px;
+  margin-top: 15px;
 }

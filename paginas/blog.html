@@ -929,27 +929,6 @@
                   </h2>
                 </header>
                 <div class="video-wrap html5-video">
-                  <script type="text/javascript">
-                    jQuery(document).ready(function(){
-                      jQuery("#jquery_jplayer_1791").jPlayer({
-                        ready: function () {
-                          jQuery(this).jPlayer("setMedia", {
-                            m4v: "../videos/blog/video1.m4v",
-                            ogv: "../videos/blog/video2.ogv" ,
-                            poster: "../imagenes/blog/img-8-770x380.jpg"});
-                        },
-                        swfPath: "",
-                        solution: "flash, html",
-                        supplied: "ogv, m4v, all",
-                        cssSelectorAncestor: "#jp_container_1791",
-                        size: {
-                          width: "100%",
-                          height: "100%"
-                        }
-                      });
-                    });
-                  </script>
-
                 <!-- BEGIN video -->
                 <div id="jp_container_1791" class="jp-video fullwidth jp-video-270p">
                 <div class="jp-type-list-parent">
@@ -1101,30 +1080,6 @@
                   </h2>
                 </header>
                 <div class="audio-wrap">
-                  <script type="text/javascript">
-                    jQuery(document).ready(function(){
-                      var myPlaylist_394 = new jPlayerPlaylist({
-                        jPlayer: "#jquery_jplayer_394",
-                        cssSelectorAncestor: "#jp_container_394"
-                      }, [
-                      {
-                        title:"Black plant",
-                        artist:"",
-                        mp3: "../mp3/sound1.mp3"}
-                      ], {
-                        playlistOptions: {
-                        enableRemoveControls: false
-                      },
-                      ready: function () {
-                        jQuery(this).jPlayer("setMedia", {
-                          mp3: "../mp3/sound1.mp3"
-                          });
-                        },
-                      supplied: "mp3, all",
-                      wmode: "window"
-                      });
-                    });
-                  </script>
                   <!-- BEGIN audio -->
                   <div id="jquery_jplayer_394" class="jp-jplayer" style="width: 0px; height: 0px;">
                     <img id="jp_poster_1" style="width: 0px; height: 0px; display: none;">
@@ -1285,11 +1240,6 @@
                   <div class="gallery-post">
                     <div id="carousel-blog" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
-                      <ol class="carousel-indicators">
-                        <li data-target="#carousel-blog" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-blog" data-slide-to="1"></li>
-                        <li data-target="#carousel-blog" data-slide-to="2"></li>
-                      </ol>
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
@@ -1303,6 +1253,11 @@
                           <img src="../imagenes/blog/img-16-800x400.jpg" alt="img-16">
                         </div>
                       </div>
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-blog" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-blog" data-slide-to="1"></li>
+                        <li data-target="#carousel-blog" data-slide-to="2"></li>
+                      </ol>
 
                       <!-- Controls -->
                       <a class="left carousel-control" href="#carousel-blog" role="button" data-slide="prev">
