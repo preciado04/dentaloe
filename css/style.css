@@ -5914,10 +5914,7 @@ li.gallery-format .grid_gallery figure img {
 .gallery-post .carousel-control {
   background-image: none;
 }
-.post .gallery-post .carousel-control {
-  background-image: none;
-}
-.post .gallery-post .carousel-indicators {
+.gallery-post .carousel-indicators {
   position: relative;
   left: 0;
   width: unset;
@@ -5925,7 +5922,7 @@ li.gallery-format .grid_gallery figure img {
   text-align: left;
   top:0;
 }
-.post .gallery-post .carousel-indicators li {
+.gallery-post .carousel-indicators li {
   border:none;
   background: #666;
   margin-top:15px;
@@ -5933,11 +5930,11 @@ li.gallery-format .grid_gallery figure img {
   margin-right: 10px;
 }
 
-.post .gallery-post .carousel-indicators li:hover {
+.gallery-post .carousel-indicators li:hover {
   background: black;
 }
 
-.post .gallery-post .carousel-indicators .active {
+.gallery-post .carousel-indicators .active {
   background: black;
   width: 10px;
   height: 10px;
