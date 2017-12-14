@@ -264,6 +264,27 @@ h6 { font: bold 18px/22px "Cabin"; color: #343434; }
     line-height: 40px;
   }
 }
+@media (min-width: 481px) {
+  .home div.type-page h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home div.type-page h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: 980px) {
+  .home div.type-page h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
 
 div.type-page h1, div.type-page h2 {
   letter-spacing: -2px;
@@ -2102,6 +2123,11 @@ article .quote-wrap blockquote {
 @media (min-width: 980px) {
   .portfolio_item_holder.col-md-4 {
     width: 33.33333333%;
+  }
+}
+@media (min-width: 1200px) {
+ .services-4 .portfolio_item_holder.col-md-4 {
+    width: 24.33333333%;
   }
 }
 
@@ -5578,6 +5604,15 @@ html.rd-navbar-fixed-linked .page {
 .contact .wpcf-form {
   margin-bottom: 50px;
 }
+
+.contact address {
+  line-height: 26px;
+}
+
+.contact address > a:hover {
+  line-height: 26px;
+  text-decoration: underline;
+}
 /* End Contact */
 
 
@@ -5939,4 +5974,8 @@ li.gallery-format .grid_gallery figure img {
   width: 10px;
   height: 10px;
   margin-top: 15px;
+}
+
+.rd-navbar-static .rd-navbar-aside-outer .rd-navbar-aside a {
+  vertical-align: text-bottom;
 }
