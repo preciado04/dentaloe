@@ -19,6 +19,7 @@ $(document).ready(function() {
     $('.rd-navbar-aside').toggleClass('active');
     if ($('.rd-navbar-toggle').hasClass('active')) {
       $('.rd-navbar-toggle, .rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-search-wrap').removeClass('active');
+      $('.rd-navbar--has-dropdown').removeClass('opened');
     }
   });
 
