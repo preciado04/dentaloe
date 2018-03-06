@@ -504,7 +504,7 @@ $('.rd-navbar--has-dropdown').hover(function() { //mouse enter
   $('.rd-navbar--has-dropdown').removeClass('focus'); //clear all that are hovered
   $(this).addClass('focus'); //add class to all our parents
 
-},function() { //mouse leave
+}, function() { //mouse leave
 
   var $this=$(this); //create local copy
   hoverTimeout = setTimeout(function() {
@@ -529,7 +529,7 @@ $(document).ready(function(){
 
 $(".filter-button").click(function(){
   var value = $(this).attr('data-filter');
-  $('.filtros li').removeClass('active');
+  $('.filtros div').removeClass('active');
   $(this).parent().addClass('active');
   if (value == "all") {
     //$('.filter').removeClass('hidden');
@@ -571,3 +571,24 @@ $(".filter-files").click(function(){
   }
 });
 */
+
+<!-- Fire the plugin onDocumentReady -->
+var $menu = $("#menu").mmenu();
+
+var $icon = $("#my-icon");
+var API = $menu.data( "mmenu" );
+
+$icon.on( "click", function() {
+  API.open();
+});
+
+API.bind( "open:finish", function() {
+  setTimeout(function() {
+    $icon.addClass( "is-active" );
+  }, 100);
+});
+API.bind( "close:finish", function() {
+  setTimeout(function() {
+    $icon.removeClass( "is-active" );
+  }, 100);
+});

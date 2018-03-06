@@ -18,9 +18,47 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
   </script>
   <![endif]-->
-  <title>Nosotros</title>
+  <title>Contacto</title>
 </head>
 <body>
+
+   <?php
+    if (isset($_REQUEST['true'])) {
+      echo "<script language = javascript>
+              swal({
+                title: '¡Excelente!',
+                text: '".$_REQUEST['true']."',
+                type: 'success',
+                showCancelButton: false,
+                closeOnConfirm: false,
+                confirmButtonText: 'Ok',
+                showLoaderOnConfirm: true, },
+                function(){   
+                  setTimeout(function(){
+                    location = 'contacto.php';
+                  });
+                });
+            </script>";
+    }
+
+    if (isset($_REQUEST['false'])) {
+      echo "<script language = javascript>
+              swal({
+                title: '¡Advertencia!',
+                text: '".$_REQUEST['false']."',
+                type: 'warning',
+                showCancelButton: false,
+                closeOnConfirm: false,
+                confirmButtonText: 'Ok',
+                showLoaderOnConfirm: true, },
+                function(){
+                  setTimeout(function(){
+                    location = 'contacto.php';
+                  });
+                });
+            </script>";
+    }
+  ?>
 
   <!-- Page -->
   <div class="page">
@@ -247,38 +285,126 @@
     </header>
     <!-- ./Header -->
 
+    <!-- Main holder -->
     <div class="main-holder">
+      <!-- Content holder -->
       <div class="content-holder clearfix">
-        <div class="about about-us">
-
-        <div class="container">
-          <h1 class="location">Nosotros</h1>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-            <li class="breadcrumb-item active">Nosotros</li>
-          </ol>
-        </div>
-
-        <div class="container content">
-          <div class="type-page">
-            
-            <div id="mission">
-              <h2>Misión</h2>
-              <p>Como clínica de especialidades odontológicas de ámbito nacional, contribuimos a mejorar la calidad de vida de nuestros pacientes, poniendo a su disposición servicios de la máxima calidad a precios razonables para que todos puedan tener a su alcance sonrisas sanas y bonitas. Al mismo tiempo, gestionar el negocio de manera que cree valor para la empresa, para el sector dental.</p>
+        <!-- Contact -->
+        <div class="container contact">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="location">Contacto</h1>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active">Contacto</li>
+              </ol>
             </div>
-            <div id="vision">
-              <h2>Visión</h2>
-              <p>Ser una empresa eficaz, dinámica y vanguardista.
-Queremos convertirnos en la agrupación de clínicas dentales referente en cuanto a calidad y confianza por parte de nuestros pacientes y proveedores. Nos preocupamos por crear un entorno humano donde trabajar, un lugar donde el buen ambiente, la profesionalidad y la estabilidad lo caractericen.</p>
-            </div>
-            
           </div>
+          <div class="row content">
+            <div class="col-xs-12">
+              <div class="type-page">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="google-map">
+                      <h5>Clinica Ciudad del Valle</h5>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d928.1201056332577!2d-104.88625081185018!3d21.488894299105063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842737222d34d0a5%3A0x18f2846b3be6ec15!2sClinica+Ciudad+del+Valle!5e0!3m2!1sen!2smx!4v1519675309681" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe>
+                    </div>
+                    <address>
+                      <strong>
+                        Venecia #108 Interior #3
+                      </strong>
+                      <br>
+                      Teléfono: 311-133-62-16<br>
+                      Celular: 311-144-16-86<br>
+                      <br>
+                    </address>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="google-map">
+                      <h5>Clinica Xalisco</h5>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1856.7934387986809!2d-104.90098728543028!3d21.4454772969773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84273122427ad793%3A0x27f892f204f21f6f!2sClinica+Xalisco!5e0!3m2!1sen!2smx!4v1519674960189" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe>
+                    </div>
+                    <address>
+                      <strong>
+                        Porfirio Diaz 28-b entre Hidalgo y Monterrey 
+                      </strong>
+                      <br>
+                      Celular: 311-145-48-65, 311-199-22-49 y 311-134-32-09<br>
+                      <br>
+                    </address>
+                  </div>
+                  <div class="col-xs-12 col-sm-4">
+                    
+                    <div class="datas">
+                      <h4>HORARIOS</h4>
+                      <div class="group">
+                        <strong>
+                          Lunes a Sabado
+                        </strong><br>
+                        <p>9:00 am - 2:00 pm</p>
+                        <p>4:00 pm - 8:00 pm</p>
+                      </div>
+                      <div class="group">
+                        <strong>
+                        Domingo
+                        </strong><br>
+                        <p>9:00 am - 2:00 pm</p>
+                      </div>
+                    </div>
+                    <div class="datas">
+                      <h4>REDES SOCIALES </h4>
+                      <div class="group">
+                        <strong>
+                        Facebook
+                        </strong>
+                        <p>Dental Orthodontics especializada/Cd del valle</p>
+                        <p>Dental Orthodontics especializada/Xalisco</p>
+                      </div>
+                      <div class="group">
+                        <strong>
+                        Instagram
+                        </strong>
+                        <p>Dental Orthodontics especializada</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-8">
+                    <h2>Formulario de contacto</h2>
+                    <div class="wrapper-form">
+                      <form method="post" action="../php/emailprocess.php" id="contact" class="wpcf-form">
+                        <div class="form-group col-xs-12 col-sm-4">
+                          <label class="sr-only" for="name">Nombre:</label>
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Nombre:">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-4">
+                          <label class="sr-only" for="email">Correo:</label>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Correo:">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-4">
+                          <label class="sr-only" for="phone">Teléfono:</label>
+                          <input type="text" class="form-control" id="phone" name="phone" placeholder="Teléfono:">
+                        </div>
+                        <div class="form-group col-xs-12">
+                          <label class="sr-only" for="message">Mensaje:</label>
+                          <textarea class="form-control" cols="40" rows="10" id="message" name="message" placeholder="Mensaje:"></textarea>
+                        </div>
+                        <div class="form-group submit-wrap">
+                          <input type="reset" value="Borrar" class="btn btn-primary ">
+                          <input type="submit" value="Enviar" class="btn btn-primary" name="send">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
-        </div><!-- .about -->
-      </div><!-- .content-holder -->
-    </div><!-- .main-holder -->
+        <!-- ./Contact -->
+      </div>
+      <!-- Content holder -->
+    </div>
+    <!-- Main holder -->
 
     <!-- Footer -->
     <footer class="footer">

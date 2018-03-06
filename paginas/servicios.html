@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="../smartmenus/jquery.smartmenus.bootstrap.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+  <link href="../css/jquery.mmenu.all.css" rel="stylesheet" />
+  <link href="../css/hamburgers.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/ekko-lightbox.css">
+  <link rel="stylesheet" href="../css/font-awesome.css">
+  <link rel="stylesheet" href="../css/sweetalert.css">
+  <script src="../js/sweetalert.min.js"></script>
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/style.css">
   <!--[if lt IE 9]>
@@ -44,25 +48,17 @@
               <div class="object-inline">
                 <span class="icon icon-sm material-icons-phone_iphone">
                 </span>
-                <a href="tel:+1 800 559 6580">
-                  +1 (800) 559 6580
+                <a href="tel:+311 144 1686">
+                  311 144 1686
                 </a>
               </div>
               <ul class="list-inline-xs">
                 <li>
-                  <a class="icon icon-xs icon-darker fa fa-facebook" href="#">
+                  <a class="icon icon-xs icon-darker fa fa-facebook" href="https://www.facebook.com/Dental-Orthodontics-Especializada-Cd-Del-Valle-1406259539494348/" target="_blank">
                   </a>
                 </li>
                 <li>
-                  <a class="icon icon-xs icon-darker fa fa-pinterest" href="#">
-                  </a>
-                </li>
-                <li>
-                  <a class="icon icon-xs icon-darker fa fa-youtube" href="#">
-                  </a>
-                </li>
-                <li>
-                  <a class="icon icon-xs icon-darker fa fa-linkedin" href="#">
+                  <a class="icon icon-xs icon-darker fa fa-instagram" href="#">
                   </a>
                 </li>
               </ul>
@@ -72,81 +68,177 @@
             <div class="rd-navbar-main">
               <!-- RD Navbar Panel -->
               <div class="rd-navbar-panel">
-                <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!-- <button href="#menu" class="rd-navbar-toggle toggle-original"><span></span></button> -->
+                
+               <button id="my-icon" class="hamburger hamburger--spin" type="button">
+                  <span class="hamburger-box">
+                     <span class="hamburger-inner"></span>
+                  </span>
+               </button>
+                
                 <!-- RD Navbar Brand-->
                 <div class="rd-navbar-brand">
                 <a class="brand" href="../index.html">
                   <div class="brand__name">
-                    <img src="../imagenes/logo-215x32.png" alt="" width="215" height="32">
+                    <img src="../imagenes/logo.png" alt="" width="215" height="32">
+                    <div class="words">
+                      <span class="one">Ortodoncia<span class="two">Dental</span>
+                      <p class="three">Especializada</p>
+                    </div>
                   </div>
+                  
                 </a>
                 </div>
               </div>
               <!-- RD Navbar Nav-->
               <div class="rd-navbar-nav-wrap toggle-original-elements"> 
-                <div class="rd-navbar-nav-wrap__element">
-                  <!-- RD Navbar Search-->
-                  <div class="rd-navbar-search rd-navbar-search-toggled toggle-original-elements">
-                    <button class="rd-navbar-search-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-search">
-                    </button>
-                    <form class="rd-search" data-search-live="rd-search-results-live" method="GET">
-                      <div class="form-wrap">
-                        <input class="form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
-                        <label class="form-label rd-input-label" for="rd-navbar-search-form-input">
-                          Search
-                        </label>
-                      </div>
-                      <button class="rd-navbar-search-submit" type="submit">
-                      </button>
-                      <div class="rd-search-results-live" id="rd-search-results-live">
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <ul class="rd-navbar-nav">
-                  <li>
-                    <a href="../index.html">Inicio</a>
-                  </li>
-                  <li class="rd-navbar--has-dropdown rd-navbar-submenu">
-                    <a href="../paginas/nosotros.html">
-                      Nosotros
-                    </a>
-                    <span class="rd-navbar-submenu-toggle"></span>
-                    <ul class="rd-navbar-dropdown">
-                      <li>
-                        <a href="../paginas/testimoniales.html">Testimoniales</a>
-                      </li>
-                      <li>
-                        <a href="../paginas/archivos.html">Archivos</a>
-                      </li>
-                      <li>
-                        <a href="../paginas/preguntas-frecuentes.html">Preguntas frecuentes</a>
-                      </li>
+                <!-- Menu mobile -->
+                <nav id="menu" class="mm-basic1">
+                  <ul>
+                    <li class="active"><a href="../index.html">Inicio</a></li>
+                    <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+                    <li><a href="../servicios.html">Servicios</a>
+                        <ul>
+                            <li>
+                              <a href="../paginas/operatoria.html">Operatoria</a>
+                              <ul>
+                                <li><a href="../paginas/resinas.html">Resinas</a></li>
+                                <li><a href="../paginas/incrustaciones.html">Incrustaciones</a></li>
+                              </ul>
+                              </li>
+                            </li>
+                            <li><a href="../paginas/endodoncia.html">Endodoncia</a></li></li>
+                            <li><a href="../paginas/prostodoncia.html">Prostodoncia</a>
+                                <ul>
+                                    <li><a href="../paginas/protesis-fija.html">Protesis fija</a>
+                                        <ul>
+                                            <li><a href="../paginas/coronas.html">Coronas</a></li>
+                                            <li><a href="../paginas/carillas.html">Carillas</a></li>
+                                            <li><a href="../paginas/implantes.html">Implantes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../paginas/protesis-removible.html">Protesis removible</a></li>
+                                    <li><a href="../paginas/protesis-total.html">Protesis total</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../paginas/periodoncia.html">Periodoncia</a>
+                                <ul>
+                                    <li><a href="../paginas/gingivectomia.html">Gingivectomia</a></li>
+                                    <li><a href="../paginas/gingivoplastia.html">Gingivoplastia</a></li>
+                                    <li><a href="../paginas/alargamiento-de-corona.html">Alargamiento de corona</a></li>
+                                    <li><a href="../paginas/frenectomia.html">Frenectomia</a></li>
+                                    <li><a href="../paginas/curetaje.html">Curetaje</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../paginas/estetica.html">Estetica</a>
+                                <ul>
+                                    <li><a href="../paginas/blanqueamiento.html">Blanqueamiento</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../paginas/odontopediatria.html">Odontopediatria</a>
+                                <ul>
+                                    <li><a href="../paginas/selladores-fosetas-y-fisuras.html">Selladores, fosetas y fisuras</a></li>
+                                    <li><a href="../paginas/barnices-de-fluor.html">Barnices de flúor</a></li>
+                                    <li><a href="../paginas/coronas-infantiles.html">Coronas infantiles</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../paginas/cirugia-bucal.html">Cirugia bucal</a>
+                                <ul>
+                                    <li><a href="../paginas/terceros-molares.html">Terceros molares</a></li>
+                                    <li><a href="../paginas/bichectomia.html">Bichectomia</a></li>
+                                    <li><a href="../paginas/injertos.html">Injertos</a></li>
+                                    <li><a href="../paginas/cirugia-ortonagtica.html">Cirugía ortonagtica</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../paginas/ortodoncia.html">Ortodoncia</a>
+                                <ul>
+                                    <li><a href="../paginas/tipos-de-brackets.html">Tipos de brackets</a>
+                                        <ul>
+                                            <li><a href="../paginas/brackets-convencionales.html">Brackets convencionales</a></li>
+                                            <li><a href="../paginas/brackets-autolegibles.html">Brackets autoligables</a></li>
+                                            <li><a href="../paginas/brackets-de-zafiro.html">Brackets de zafiro</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../paginas/ortopedia-maxilar.html">Ortopedia maxilar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="../paginas/contacto.php">Contacto</a></li>
                     </ul>
+                </nav>
+
+                <!-- Menu desktop -->
+                <ul class="nav">
+                  <li><a href="../index.html" class="active">Inicio<span class="arrow">&#9660;</span></a></li>
+                  <li><a href="../paginas/nosotros.html">Nosotros<span class="arrow">&#9660;</span></a></li>
+                  <li><a href="../paginas/servicios.html">Servicios<span class="arrow">&#9660;</span></a>
+                      <ul>
+                          <li>
+                            <a href="../paginas/operatoria.html">Operatoria<span class="arrow">&#9660;</span></a></li>
+                            <ul>
+                              <li><a href="../paginas/resinas.html">Resinas<span class="arrow">&#9660;</span></a></li>
+                              <li><a href="../paginas/incrustaciones.html">Incrustaciones<span class="arrow">&#9660;</span></a></li>
+                            </ul>
+                          </li>
+                          <li><a href="../paginas/endodoncia.html">Endodoncia<span class="arrow">&#9660;</span></a></li></li>
+                          <li><a href="../paginas/prostodoncia.html">Prostodoncia<span class="arrow">&#9660;</span></a>
+                              <ul>
+                                  <li><a href="../paginas/protesis-fija.html">Protesis fija<span class="arrow">&#9660;</span></a>
+                                      <ul>
+                                          <li><a href="../paginas/coronas.html">Coronas<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/carillas.html">Carillas<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/implantes.html">Implantes<span class="arrow">&#9660;</span></a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="../paginas/protesis-removible.html">Protesis removible<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/protesis-total.html">Protesis total<span class="arrow">&#9660;</span></a></li>
+                              </ul>
+                          </li>
+                          <li><a href="../paginas/periodoncia.html">Periodoncia<span class="arrow">&#9660;</span></a>
+                              <ul>
+                                  <li><a href="../paginas/gingivectomia.html">Gingivectomia<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/gingivoplastia.html">Gingivoplastia<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/alargamiento-de-corona.html">Alargamiento de corona<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/frenectomia.html">Frenectomia<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/curetaje.html">Curetaje<span class="arrow">&#9660;</span></a></li>
+                              </ul>
+                          </li>
+                          <li><a href="../paginas/estetica.html">Estetica<span class="arrow">&#9660;</span></a>
+                              <ul>
+                                  <li><a href="../paginas/blanqueamiento.html">Blanqueamiento<span class="arrow">&#9660;</span></a></li>
+                              </ul>
+                          </li>
+                          <li><a href="../paginas/odontopediatria.html">Odontopediatria<span class="arrow">&#9660;</span></a>
+                              <ul>
+                                  <li><a href="../paginas/selladores-fosetas-y-fisuras.html">Selladores, fosetas y fisuras<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/barnices-de-fluor.html">Barnices de flúor<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/coronas-infantiles.html">Coronas infantiles<span class="arrow">&#9660;</span></a></li>
+                              </ul>
+                          </li>
+                          <li><a href="../paginas/cirugia-bucal.html">Cirugia bucal<span class="arrow">&#9660;</span></a>
+                              <ul>
+                                  <li><a href="../paginas/terceros-molares.hmtl">Terceros molares<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/bichectomia.html">Bichectomia<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/injertos.html">Injertos<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/cirugia-ortonagtica.html">Cirugía ortonagtica<span class="arrow">&#9660;</span></a></li>
+                              </ul>
+                          </li>
+                          <li><a href="../paginas/ortodoncia.html">Ortodoncia<span class="arrow">&#9660;</span></a>
+                              <ul>
+                                  <li><a href="../paginas/tipos-de-brackets.html">Tipos de brackets<span class="arrow">&#9660;</span></a>
+                                      <ul>
+                                          <li><a href="../paginas/brackets-convencionales.html">Brackets convencionales<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/brackets-autolegibles.html">Brackets autoligables<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/brackets-de-zafiro.html">Brackets de zafiro<span class="arrow">&#9660;</span></a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="../paginas/ortopedia-maxilar.html">Ortopedia maxilar</a></li>
+                              </ul>
+                          </li>
+                      </ul>
                   </li>
-                  <li class="rd-navbar--has-dropdown rd-navbar-submenu active">
-                    <a href="../paginas/servicios.html">
-                      Servicios
-                    </a>
-                    <span class="rd-navbar-submenu-toggle"></span>
-                    <ul class="rd-navbar-dropdown">
-                      <li>
-                        <a href="../paginas/servicios-2.html">Servicios 2</a>
-                      </li>
-                      <li>
-                        <a href="../paginas/servicios-3.html">Servicios 3</a>
-                      </li>
-                      <li>
-                        <a href="../paginas/servicios-4.html">Servicios 4</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="../paginas/blog.html">Blog</a>
-                  </li>
-                  <li>
-                    <a href="../paginas/contacto.html">Contacto</a>
-                  </li>
+                  <li><a href="../paginas/contacto.php">Contacto</a></li>
                 </ul>
               </div>
             </div>
@@ -178,455 +270,469 @@
                   <div class="page-content">
                     <div class="clear"></div>
                   </div>
-                  <div class="filter-wrapper clearfix">
-                    <div class="pull-right">
-                      <strong>Categories: </strong>
-                      <ul id="filters" class="nav nav-pills filtros">
-                        <li class="active">
-                          <a class="filter-button" data-filter="all">
-                            Show All
-                          </a>
-                        </li>
-                        <li>
-                          <a class="filter-button" data-filter=".category-1">
-                            Services Category 1
-                          </a>
-                        </li>
-                        <li>
-                          <a class="filter-button" data-filter=".category-2">
-                            Services Category 2
-                          </a>
-                        </li>
-                        <li>
-                          <a class="filter-button" data-filter=".category-3">
-                            Services Category 3
-                          </a>
-                        </li>
-                      </ul>
-                      <div class="clear"></div>
-                    </div>
-                  </div>
-                  <ul id="portfolio-grid" class="filterable-portfolio thumbnails portfolio-3cols isotope list-unstyled" data-cols="3cols">
-                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter category-1 category-3">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/nosotros/img-16.jpg" class="image-wrap" data-title="Image Format" data-toggle="lightbox">
-                            <img src="../imagenes/servicios/img-16-600x380.jpg" alt="Image Format">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/image-format.html">
-                              Image Format
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            This format perfectly fits in case you need only a single image for your post display. Use Featured image option...
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_20 isotope-item slideshow filter category-2">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/servicios/img-15.jpg" class="image-wrap" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="../imagenes/servicios/img-15-600x380.jpg" alt="Image Format" class="img-fluid">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <div class="grid_gallery clearfix">
-                          <div class="grid_gallery_inner">
-                            <figure class="gallery_item featured-thumbnail thumbnail single-gallery-item">
-                              <a href="../imagenes/servicios/img-3.jpg" class="image-wrap" rel="prettyPhoto[gallery]" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                                <img alt="img-7" src="../imagenes/servicios/img-3.jpg" class="img-fluid">
-                                <span class="zoom-icon">
-                                </span>
-                              </a>
-                            </figure>
-                            <figure class="gallery_item featured-thumbnail thumbnail single-gallery-item">
-                              <a href="../imagenes/servicios/portafolio/img-5.jpg" class="image-wrap" rel="prettyPhoto[gallery]" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                                <img alt="img-8" src="../imagenes/servicios/img-5.jpg" class="img-fluid">
-                                <span class="zoom-icon">
-                                </span>
-                              </a>
-                            </figure>
-                            <figure class="gallery_item featured-thumbnail thumbnail single-gallery-item">
-                              <a href="../imagenes/servicios/img-6.jpg" class="image-wrap" rel="prettyPhoto[gallery]" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                                <img alt="img-10" src="../imagenes/servicios/img-6.jpg" class="img-fluid">
-                                <span class="zoom-icon">
-                                </span>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/slideshow-format.html">
-                              Slideshow Format
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            This format can be used to display images as a slideshow. To attach images to the post please use Upload...
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_20 term_id_21 isotope-item gallery-format filter category-2 category-3">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/servicios/img-14.jpg" class="image-wrap" data-title="Gallery Format" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="../imagenes/servicios/img-14-600x380.jpg" alt="Image Format" class="img-fluid">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <div class="grid_gallery clearfix">
-                          <div class="grid_gallery_inner">
-                            <figure class="gallery_item featured-thumbnail thumbnail single-gallery-item">
-                              <a href="../imagenes/servicios/portafolio/img-7.jpg" class="image-wrap" rel="prettyPhoto[gallery]" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                                <img alt="img-7" src="../imagenes/servicios/portafolio/img-7-260x160.jpg" width="260" height="160" class="img-fluid">
-                                <span class="zoom-icon">
-                                </span>
-                              </a>
-                            </figure>
-                            <figure class="gallery_item featured-thumbnail thumbnail single-gallery-item">
-                              <a href="../imagenes/servicios/portafolio/img-8.jpg" class="image-wrap" rel="prettyPhoto[gallery]" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                                <img alt="img-8" src="../imagenes/servicios/portafolio/img-8-260x160.jpg" width="260" height="160" class="img-fluid">
-                                <span class="zoom-icon">
-                                </span>
-                              </a>
-                            </figure>
-                            <figure class="gallery_item featured-thumbnail thumbnail single-gallery-item">
-                              <a href="../imagenes/servicios/portafolio/img-10.jpg" class="image-wrap" rel="prettyPhoto[gallery]" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                                <img alt="img-10" src="../imagenes/servicios/portafolio/img-10-260x160.jpg" width="260" height="160" class="img-fluid">
-                                <span class="zoom-icon">
-                                </span>
-                              </a>
-                            </figure>
-                            <figure class="gallery_item featured-thumbnail thumbnail single-gallery-item">
-                              <a href="../imagenes/servicios/portafolio/img-11.jpg" class="image-wrap" rel="prettyPhoto[gallery]" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                                <img alt="img-11" src="../imagenes/servicios/portafolio/img-11-260x160.jpg" width="260" height="160" class="img-fluid">
-                                <span class="zoom-icon">
-                                </span>
-                              </a>
-                            </figure>
-                            <figure class="gallery_item featured-thumbnail thumbnail single-gallery-item">
-                              <a href="../imagenes/servicios/portafolio/img-12.jpg" class="image-wrap" rel="prettyPhoto[gallery]" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                                <img alt="img-12" src="../imagenes/servicios/portafolio/img-12-260x160.jpg" width="260" height="160" class="img-fluid">
-                                <span class="zoom-icon">
-                                </span>
-                              </a>
-                            </figure>
-                            <figure class="gallery_item featured-thumbnail thumbnail single-gallery-item">
-                              <a href="../imagenes/servicios/portafolio/img-13.jpg" class="image-wrap" rel="prettyPhoto[gallery]" data-title="Slideshow Format" data-toggle="lightbox" data-gallery="example-gallery">
-                                <img alt="img-13" src="../imagenes/servicios/portafolio/img-13-260x160.jpg" width="260" height="160" class="img-fluid">
-                                <span class="zoom-icon">
-                                </span>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/gallery-format.html">
-                              Gallery Format
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            This format can be used to display images as a gallery. To attach images to the post please use Upload... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_22 term_id_17 isotope-item filter category-1">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="vista-portafolio/video-format.html">
-                            <img src="../imagenes/servicios/img-13-600x380.jpg" alt="Image Format">
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/video-format.html">
-                              Video Format
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            If your post contains video, please use this format. Select Video format in the appeared metabox and add the embed... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_20 term_id_17 isotope-item filter category-2">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="vista-portafolio/audio-format.html">
-                            <img src="../imagenes/servicios/img-12-600x380.jpg" alt="Audio Format">
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/audio-format.html">
-                              Audio Format
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            If your post contains video, please use this format. Select Video format in the appeared metabox and add the embed... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_20 term_id_22 term_id_17 isotope-item filter category-1">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/servicios/img-11.jpg" class="image-wrap" data-title="Slideshow Format" data-toggle="lightbox">
-                            <img src="../imagenes/servicios/img-11-600x380.jpg" alt="Image Format">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/sodales-orci-et.html">
-                              Sodales orci et
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_20 term_id_22 term_id_17 isotope-item filter category-2">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/servicios/img-10.jpg" class="image-wrap" data-title="Slideshow Format" data-toggle="lightbox">
-                            <img src="../imagenes/servicios/img-10-600x380.jpg" alt="Image Format">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/in-faucibus-risus.html">
-                              In faucibus risus
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_20 term_id_22 term_id_17 isotope-item filter category-2 category-3">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/servicios/img-8.jpg" class="image-wrap" data-title="Slideshow Format" data-toggle="lightbox">
-                            <img src="../imagenes/servicios/img-8-600x380.jpg" alt="Image Format">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/in-faucibus.html">
-                              In faucibus
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_22 term_id_17 isotope-item filter category-2">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/servicios/img-7.jpg" class="image-wrap" data-title="Slideshow Format" data-toggle="lightbox">
-                            <img src="../imagenes/servicios/img-7-600x380.jpg" alt="Image Format">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/malesuada-fames-ac.html">
-                              Malesuada fames ac
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                  </ul>
                 </div>
-              </div>
+                
+                <div class="filter-wrapper clearfix">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div id="filters" class="nav nav-pills filtros">
+                        <div class="col-xs-12 col-md-2">
+                          <strong>Categorías: </strong>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2 active">
+                          <a class="filter-button" data-filter="all">
+                            Mostrar todo *
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".operative">
+                            Operatoria
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".endodontics">
+                            Endodoncia
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".prosthodontics">
+                            Prostodoncia
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".periodontics">
+                            Periodoncia
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".esthetic">
+                            Estetica
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".odontopediatria">
+                            Odontopediatria
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".oral-surgery">
+                            Cirugia bucal
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".orthodontics">
+                            Ortodoncia
+                          </a>
+                        </div>
+                        <div class="clear"></div>
+                      </div><!-- #filters -->
+                    </div><!-- .row -->
+                  </div><!-- .container-fluid -->
+                </div><!-- .filter-wrapper -->
+                <div class="col-xs-12">
+                  <ul id="portfolio-grid" class="filterable-portfolio thumbnails portfolio-3cols isotope list-unstyled" data-cols="3cols">
+
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter operative">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/operatoria-3.jpg" class="image-wrap" data-title="Resinas" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/operatoria-3.jpg" alt="Resinas">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/resinas.html">
+                              Resinas
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            Las resinas compuestas o empastes del color del diente, son una buena opción para relleno de la cavidad que se ocasiona por caries...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter operative">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/incrustacion-1.jpg" class="image-wrap" data-title="Incrustaciones" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/incrustacion-1.jpg" alt="Incrustaciones">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/incrustaciones.html">
+                              Incrustaciones
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            Son un tipo de Restauración indirecta de cubrimiento parcial en dientes posteriores que provee  protección, morfología, función y estética...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter endodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/endodoncia.png" class="image-wrap" data-title="Endodoncia" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/endodoncia.png" alt="Endodoncia">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/endodoncia.html">
+                              Endodoncia
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            Uno de los procedimientos más utilizados en el dentista es el de la endodoncia: se trata de un tratamiento de los conductos radiculares...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter prosthodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/prostodoncia-1.jpg" class="image-wrap" data-title="Protesis fija" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/prostodoncia-1.jpg" alt="Protesis fija">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/protesis-fija.html">
+                              Prótesis fija
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            La prótesis es aquel procedimiento mediante el cual se repara artificialmente la falta de un órgano o parte de él, de forma que...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter prosthodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/corona-3.jpg" class="image-wrap" data-title="Coronas" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/corona-3.jpg" alt="Coronas">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/coronas.html">
+                              Coronas
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            Las coronas dentales son conocidas también como fundas., Dependen del material con el que hayan sido fabricados...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter prosthodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/carillas.jpg" class="image-wrap" data-title="Carillas" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/carillas.jpg" alt="Carillas">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/carillas.html">
+                              Carillas
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            Las resinas compuestas o empastes del color del diente, son una buena opción para relleno de la cavidad que se ocasiona por caries...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter periodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/frenectomia-2.jpg" class="image-wrap" data-title="Frenectomía" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/frenilectmia-2.jpg" alt="Frenectomía">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/frenectomia.html">
+                              Frenectomía 
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            La frenectomía es una técnica recurrente en odontología, mediante la cual se corrige el problema de los frenillos...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter periodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/perio-1.jpg" class="image-wrap" data-title="Gingivectomia" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/perio-1.jpg" alt="Gingivectomia">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/gingivectomia.html">
+                              Gingivectomia
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            La Gingivectomia es un procedimiento quirúrgico por el que se recontornea  una parte lesionada de la encía...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter prosthodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/removible-1.jpg" class="image-wrap" data-title="Protesis total" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/removible-1.jpg" alt="Protesis total">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/protesis-total.html">
+                              Protesis total
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            La prótesis dental completa es un tratamiento del edentulismo total (sin dientes) mediante aparatos bucales portadores de dientes artificiales...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter periodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/gigivoplastia.jpg" class="image-wrap" data-title="Gingivoplastia" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/gigivoplastia.jpg" alt="Gingivoplastia">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/gingivoplastia.html">
+                              Gingivoplastia
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            Cuando los tejidos de la encía no están saludables se pueden encontrar alteraciones en la forma...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter periodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/alargamiento-de-corona.jpg" class="image-wrap" data-title="Alargamiento de corona" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/alargamiento-de-corona.jpg" alt="Alargamiento de corona">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/alargamiento-de-corona.html">
+                              Alargamiento de corona
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            El alargamiento de corona es un procedimiento quirúrgico que tiene como objetivo remodelar el contorno de la encía...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter periodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/curetaje-1.jpg" class="image-wrap" data-title="Curetaje" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/curetaje-1.jpg" alt="Curetaje">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/curetaje.html">
+                              Curetaje 
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            Existe cierta confusión sobre las diferencias entre una limpieza normal y un curetaje....
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+                    
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter prosthodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/total-2.jpg" class="image-wrap" data-title="Protesis removible" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/total-2.jpg" alt="Protesis removible">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/protesis-removible.html">
+                              Protesis removible
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            Las prótesis removibles,  son prótesis parciales dentomucosoportadas. Es decir, se sujetan tanto en los dientes como en la mucosa...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+
+                    <li class="portfolio_item term_id_20 term_id_22 isotope-item filter prosthodontics">
+                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
+                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
+                          <a href="../imagenes/servicios/implante-1.jpg" class="image-wrap" data-title="Implantes" data-toggle="lightbox">
+                            <img src="../imagenes/servicios/implante-1.jpg" alt="Implantes">
+                            <span class="zoom-icon"></span>
+                          </a>
+                        </figure><!-- .thumbnail__portfolio -->
+
+                        <div class="caption caption__portfolio">
+                          <h3>
+                            <a href="paginas/implantes.html">
+                              Implantes
+                            </a>
+                          </h3>
+                          <p class="excerpt">
+                            Los implantes dentales son parecidos a una raíz artificial que se diseña para adaptarse a la dentadura del paciente...
+                          </p>
+                        </div><!-- .caption__portfolio -->
+                      </div><!-- .portfolio_item_holder -->
+                    </li><!-- .portfolio_item -->
+
+                  </ul>
+                </div><!-- .col-xs-12 -->
+              </div><!-- #page-1 -->
               <div id="page-2" class="row content">
                 <div class="col-xs-12">
                   <div class="page-content">
                     <div class="clear"></div>
                   </div>
-                  <div class="filter-wrapper clearfix">
-                    <div class="pull-right">
-                      <strong>Categories: </strong>
-                      <ul id="filters" class="nav nav-pills filtros">
-                        <li class="active">
-                          <a class="filter-button" data-filter="all">
-                            Show All
-                          </a>
-                        </li>
-                        <li>
-                          <a class="filter-button" data-filter=".category-1">
-                            Services Category 1
-                          </a>
-                        </li>
-                        <li>
-                          <a class="filter-button" data-filter=".category-2">
-                            Services Category 2
-                          </a>
-                        </li>
-                        <li>
-                          <a class="filter-button" data-filter=".category-3">
-                            Services Category 3
-                          </a>
-                        </li>
-                      </ul>
-                      <div class="clear"></div>
-                    </div>
-                  </div>
-                  <ul id="portfolio-grid" class="filterable-portfolio thumbnails portfolio-3cols isotope list-unstyled" data-cols="3cols">
-                    <li class="portfolio_item term_id_20 term_id_22 term_id_17 isotope-item filter category-1 category-2">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/nosotros/img-6.jpg" class="image-wrap" data-title="Image Format" data-toggle="lightbox">
-                            <img src="../imagenes/servicios/img-6-600x380.jpg" alt="Image Format">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/feugiat-vitae-leo.html">
-                              Feugiat vitae leo
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_20 term_id_22 term_id_17 isotope-item filter category-3">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/servicios/img-5.jpg" class="image-wrap" data-title="Slideshow Format" data-toggle="lightbox">
-                            <img src="../imagenes/servicios/img-5-600x380.jpg" alt="Image Format">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/suspendisse-arcu-nisl.html">
-                              Suspendisse arcu nisl
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_20 term_id_22 term_id_17 isotope-item filter category-2">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/nosotros/img-4.jpg" class="image-wrap" data-title="Slideshow Format" data-toggle="lightbox">
-                            <img src="../imagenes/servicios/img-4-600x380.jpg" alt="Image Format">
-                            <span class="zoom-icon"></span>
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/donec-tellus-leo.html">
-                              Donec tellus leo
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                    <li class="portfolio_item term_id_20 term_id_22 term_id_17 isotope-item filter category-3 category-2 category-1">
-                      <div class="portfolio_item_holder col-xs-12 col-sm-6 col-md-4">
-                        <figure class="featured-thumbnail thumbnail thumbnail__portfolio">
-                          <a href="../imagenes/servicios/img-3.jpg" class="image-wrap" data-title="Sed blandit massa vel" data-toggle="lightbox">
-                            <img src="../imagenes/servicios/img-3-600x380.jpg" alt="Sed blandit massa vel">
-                          </a>
-                        </figure>
-                        <!--/.thumbnail__portfolio-->
-                        <div class="caption caption__portfolio">
-                          <h3>
-                            <a href="vista-portafolio/sed-blandit-massa-vel.html">
-                              Sed blandit massa vel
-                            </a>
-                          </h3>
-                          <p class="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum... 
-                          </p>
-                        </div>
-                        <!--/.caption__portfolio-->
-                      </div>
-                      <!--/.portfolio_item_holder-->
-                    </li>
-                    <!--/.portfolio_item-->
-                  </ul>
                 </div>
-              </div>
+                
+                <div class="filter-wrapper clearfix">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div id="filters" class="nav nav-pills filtros">
+                        <div class="col-xs-12 col-md-2">
+                          <strong>Categorías: </strong>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2 active">
+                          <a class="filter-button" data-filter="all">
+                            Mostrar todo *
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".operative">
+                            Operatoria
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".endodontics">
+                            Endodoncia
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".prosthodontics">
+                            Prostodoncia
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".periodontics">
+                            Periodoncia
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".esthetic">
+                            Estetica
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".odontopediatria">
+                            Odontopediatria
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".oral-surgery">
+                            Cirugia bucal
+                          </a>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-2">
+                          <a class="filter-button" data-filter=".orthodontics">
+                            Ortodoncia
+                          </a>
+                        </div>
+                        <div class="clear"></div>
+                      </div><!-- #filters -->
+                    </div><!-- .row -->
+                  </div><!-- .container-fluid -->
+                </div><!-- .filter-wrapper -->
+                <div class="col-xs-12">
+                  <ul id="portfolio-grid" class="filterable-portfolio thumbnails portfolio-3cols isotope list-unstyled" data-cols="3cols">
+
+
+
+                  </ul>
+                </div><!-- .col-xs-12 -->
+              </div><!-- #page-2 -->
             </div>
           </div>
 
@@ -643,42 +749,35 @@
     </div>
     <!-- Main holder -->
 
-      <!-- Footer -->
-     <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-4 copyright">
             <h4>Copyright</h4>
             <a href="#"><img src="../imagenes/logo-smile-footer.png"></a>
             <span>
-              <a href="#">Smile</a> © 2017 • 
+              <a href="#">Smile</a> © 2018 • 
               <a href="#">Privacy Policy</a>
             </span>
           </div>
           <div class="col-xs-12 col-sm-4 about-us">
-            <h4>About us</h4>
+            <h4>Nosotros</h4>
             <div class="txt">
-              <span>Vestibulum iaculis lacinia est. </span>
-              Entum velit. Fusce euismod consquat ante. Lorem ipsum lor sit at conseetuer adipiscing elitqolor lobortis quis lobor tisigniss mulvar ac lorem. Vestibue sed dor. Aliam con.
-              gue fermentum nisl. Mauris accu.
+              <h6>Misión</h6>
+              <p>Ser una empresa eficaz, dinámica y vanguardista.
+Queremos convertirnos en ...</p>
+              <a href="../paginas/nosotros.html" class="btn btn-primary" >Leer más</a>
+            </div>
+            <div class="txt">
+              <h6>Visión</h6>
+              <p>Como clínica de especialidades odontológicas de ámbito nacional, contribuimos ...</p>
+              <a href="../paginas/nosotros.html" class="btn btn-primary" >Leer más</a>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 contact-us">
-            <h4>Contact us</h4>
+            <h4>Contacto</h4>
             <div class="icon-text">
-
-              <div class="email">
-                <div class="col-xs-2">
-                  <i class="fa fa-envelope"></i>
-                </div>
-                <div class="col-xs-10 txt">
-                    <p>
-                      <a href="mailto:mail@demolink.org">
-                        mail@demolink.org
-                      </a>
-                    </p>
-                </div>
-              </div>
 
               <div class="address">
                 <div class="col-xs-2">
@@ -686,21 +785,19 @@
                 </div>
                 <div class="col-xs-10 txt">
                     <p>
-                      9863 - 9867 Mill Road,  Cambridge, MG09 99HT
+                      Venecia #108 Interior #3
                     </p>
                 </div>
               </div>
-
-              <div class="website">
+              
+              <div class="address">
                 <div class="col-xs-2">
-                  <i class="fa fa-desktop"></i>
+                  <i class="fa fa-facebook"></i>
                 </div>
                 <div class="col-xs-10 txt">
-                    <p>
-                      <a href="https://www.demolink.org">
-                        https://www.demolink.org
-                      </a>
-                    </p>
+                    <a href="https://www.facebook.com/Dental-Orthodontics-Especializada-Cd-Del-Valle-1406259539494348/">
+                      Dental Orthodontics especializada
+                    </a>
                 </div>
               </div>
 
@@ -710,8 +807,8 @@
                 </div>
                 <div class="col-xs-10 txt">
                     <p>
-                      <a href="tel:+1 800 559 6580">
-                        +1 800 559 6580
+                      <a href="tel:+311 144 1686">
+                        311 144 1686
                       </a>
                     </p>
                 </div>
@@ -735,10 +832,9 @@
   <!-- ./Page -->
 
   <script src="../js/jquery.js"></script>
-  <script src="../bootstrap/dist/js/bootstrap.js"></script>
-  <script src="../smartmenus/jquery.smartmenus.js"></script>
-  <script src="../smartmenus/jquery.smartmenus.bootstrap.js"></script>
-  <script src="../lightbox/ekko-lightbox.js" ></script>
+  <script src="../js/jquery.mmenu.all.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/ekko-lightbox.js"></script>
   <script src="../js/jquery.twbsPagination.js" type="text/javascript"></script>
   <script src="../js/scripts.js" ></script>
 </body>
