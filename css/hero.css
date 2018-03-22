@@ -23,7 +23,7 @@
   list-style: none;
   text-align: left;
   letter-spacing: 0px;
-  margin 0 2px;
+  margin: 0 2px;
 }
 
 .fade-carousel .carousel-indicators > li {
@@ -31,7 +31,7 @@
   border-color: #fff;
   opacity: .7;
   border: solid 2px white;
-  background:transparent;
+  background: transparent;
   box-shadow: 1px 1px 0 0 rgba(58, 58, 58, 0.2);
 }
 
@@ -50,22 +50,22 @@
   z-index: 3;
   color: #fff;
   text-align: left;
-    -webkit-transform: translate3d(-50%,-50%,0);
-       -moz-transform: translate3d(-50%,-50%,0);
-        -ms-transform: translate3d(-50%,-50%,0);
-         -o-transform: translate3d(-50%,-50%,0);
-            transform: translate3d(-50%,-50%,0);
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -moz-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  -o-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
 }
 
 .hero h4 {
   font-size: 22px;
   line-height: 1.35;
-  margin-bottom: :0;
+  margin-bottom: 0;
   padding: 0;
   font-weight: 500;
 }
 
-.hero h2{
+.hero h2 {
   font-size: 34px;
   color: #ea4a31;
   margin: 0;
@@ -92,7 +92,8 @@
   cursor: pointer;
 }
 
-.btn.btn-hero::before, .btn.btn-hero::after {
+.btn.btn-hero::before,
+.btn.btn-hero::after {
   content: '';
   position: absolute;
   top: 0;
@@ -130,7 +131,7 @@
 }
 
 /* Slides backgrounds */
-.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
   background-size: cover;
@@ -216,12 +217,13 @@ html:not(.lt-ie10) .not-animated {
   font-family: "Roboto Bold";
 }
 
-.hero h4, .hero a {
+.hero h4,
+.hero a {
   font-family: "Roboto Light";
 }
 
 .carousel-indicators {
-  top: 82%; 
+  top: 82%;
 }
 .fade-carousel {
   margin-top: 55px;
@@ -244,16 +246,19 @@ body.home .content-holder {
     top: 29%;
     left: 36%;
   }
+
   .carousel-indicators {
-   top:82%; 
+    top: 82%;
   }
+
   .hero h2 {
     font-size: 46px;
   }
 
- .hero h4 {
+  .hero h4 {
     font-size: 28px;
   }
+
   .fade-carousel {
     margin-top: 55px;
   }
@@ -261,18 +266,19 @@ body.home .content-holder {
 
 @media (min-width: 992px) {
   .hero {
-     left:26%;
-     top:60%; 
-   }
-   
+    left: 26%;
+    top: 60%;
+  }
+
   .hero h2 {
     font-size: 60px;
   }
 
- .hero h4 {
+  .hero h4 {
     font-size: 36px;
     line-height: 1.25;
   }
+
   .fade-carousel {
     margin-top: 190px;
   }
@@ -280,10 +286,10 @@ body.home .content-holder {
 
 @media (min-width: 1009px) {
   .hero {
-     left: 45%;
-     top: 38%; 
-   }
-   
+    left: 45%;
+    top: 38%;
+  }
+
   .fade-carousel {
     margin-top: 213px;
   }
@@ -291,14 +297,14 @@ body.home .content-holder {
 
 @media (min-width: 1200px) {
   .hero {
-     left:25%; 
-   }
-   
+    left: 25%;
+  }
+
   .hero h2 {
     font-size: 72px;
   }
 
- .hero h4 {
+  .hero h4 {
     font-size: 25px;
   }
 
@@ -311,7 +317,7 @@ body.home .content-holder {
 
 .hero {
   left: 50%;
-  top: 140px; 
+  top: 140px;
 }
 
 .carousel-indicators {
@@ -335,7 +341,7 @@ body.home .content-holder {
 @media (min-width: 446px) {
   .carousel.fade-carousel.slide,
   .fade-carousel .slides div[class^="slide-"] {
-    height: 319px
+    height: 319px;
   }
 
   .hero {
@@ -347,7 +353,7 @@ body.home .content-holder {
 @media (min-width: 768px) {
   .carousel.fade-carousel.slide,
   .fade-carousel .slides div[class^="slide-"] {
-    height: 432px
+    height: 432px;
   }
 
   .hero {
@@ -364,13 +370,13 @@ body.home .content-holder {
 @media (min-width: 992px) {
   .carousel.fade-carousel.slide,
   .fade-carousel .slides div[class^="slide-"] {
-    height: 474px
+    height: 474px;
   }
 
   .hero {
     left: 42%;
     top: 210px;
-    width: 80%; 
+    width: 80%;
   }
 
   .carousel-indicators {
@@ -387,7 +393,7 @@ body.home .content-holder {
 @media (min-width: 1200px) {
   .carousel.fade-carousel.slide,
   .fade-carousel .slides div[class^="slide-"] {
-    height: 478px
+    height: 478px;
   }
 
   .hero {

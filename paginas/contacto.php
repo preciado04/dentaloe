@@ -123,7 +123,6 @@
                       <p class="three">Especializada</p>
                     </div>
                   </div>
-                  
                 </a>
                 </div>
               </div>
@@ -134,69 +133,69 @@
                   <ul>
                     <li class="active"><a href="../index.html">Inicio</a></li>
                     <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-                    <li><a href="../servicios.html">Servicios</a>
+                    <li><a href="../paginas/servicios.html">Servicios</a>
                         <ul>
                             <li>
-                              <a href="../paginas/operatoria.html">Operatoria</a>
+                              <a href="#">Operatoria</a>
                               <ul>
-                                <li><a href="../paginas/resinas.html">Resinas</a></li>
-                                <li><a href="../paginas/incrustaciones.html">Incrustaciones</a></li>
+                                <li><a href="../paginas/vista-servicio/resinas.html">Resinas</a></li>
+                                <li><a href="../paginas/vista-servicio/incrustaciones.html">Incrustaciones</a></li>
                               </ul>
                               </li>
                             </li>
-                            <li><a href="../paginas/endodoncia.html">Endodoncia</a></li></li>
-                            <li><a href="../paginas/prostodoncia.html">Prostodoncia</a>
+                            <li><a href="../paginas/vista-servicio/endodoncia.html">Endodoncia</a></li></li>
+                            <li><a href="../paginas/vista-servicio/prostodoncia.html">Prostodoncia</a>
                                 <ul>
-                                    <li><a href="../paginas/protesis-fija.html">Protesis fija</a>
+                                    <li><a href="../paginas/vista-servicio/protesis-fija.html">Protesis fija</a>
                                         <ul>
-                                            <li><a href="../paginas/coronas.html">Coronas</a></li>
-                                            <li><a href="../paginas/carillas.html">Carillas</a></li>
-                                            <li><a href="../paginas/implantes.html">Implantes</a></li>
+                                            <li><a href="../paginas/vista-servicio/coronas.html">Coronas</a></li>
+                                            <li><a href="../paginas/vista-servicio/carillas.html">Carillas</a></li>
+                                            <li><a href="../paginas/vista-servicio/implantes.html">Implantes</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="../paginas/protesis-removible.html">Protesis removible</a></li>
-                                    <li><a href="../paginas/protesis-total.html">Protesis total</a></li>
+                                    <li><a href="../paginas/vista-servicio/protesis-removible.html">Protesis removible</a></li>
+                                    <li><a href="../paginas/vista-servicio/protesis-total.html">Protesis total</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../paginas/periodoncia.html">Periodoncia</a>
+                            <li><a href="../paginas/vista-servicio/periodoncia.html">Periodoncia</a>
                                 <ul>
-                                    <li><a href="../paginas/gingivectomia.html">Gingivectomia</a></li>
-                                    <li><a href="../paginas/gingivoplastia.html">Gingivoplastia</a></li>
-                                    <li><a href="../paginas/alargamiento-de-corona.html">Alargamiento de corona</a></li>
-                                    <li><a href="../paginas/frenectomia.html">Frenectomia</a></li>
-                                    <li><a href="../paginas/curetaje.html">Curetaje</a></li>
+                                    <li><a href="../paginas/vista-servicio/gingivectomia.html">Gingivectomia</a></li>
+                                    <li><a href="../paginas/vista-servicio/gingivoplastia.html">Gingivoplastia</a></li>
+                                    <li><a href="../paginas/vista-servicio/alargamiento-de-corona.html">Alargamiento de corona</a></li>
+                                    <li><a href="../paginas/vista-servicio/frenectomia.html">Frenectomia</a></li>
+                                    <li><a href="../paginas/vista-servicio/curetaje.html">Curetaje</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../paginas/estetica.html">Estetica</a>
+                            <li><a href="#">Estetica</a>
                                 <ul>
-                                    <li><a href="../paginas/blanqueamiento.html">Blanqueamiento</a></li>
+                                    <li><a href="../paginas/vista-servicio/blanqueamiento.html">Blanqueamiento</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../paginas/odontopediatria.html">Odontopediatria</a>
+                            <li><a href="../paginas/vista-servicio/odontopediatria.html">Odontopediatria</a>
                                 <ul>
-                                    <li><a href="../paginas/selladores-fosetas-y-fisuras.html">Selladores, fosetas y fisuras</a></li>
-                                    <li><a href="../paginas/barnices-de-fluor.html">Barnices de flúor</a></li>
-                                    <li><a href="../paginas/coronas-infantiles.html">Coronas infantiles</a></li>
+                                    <li><a href="../paginas/vista-servicio/selladores-fosetas-y-fisuras.html">Selladores, fosetas y fisuras</a></li>
+                                    <li><a href="../paginas/vista-servicio/barnices-de-fluor.html">Barnices de flúor</a></li>
+                                    <li><a href="../paginas/vista-servicio/coronas-infantiles.html">Coronas infantiles</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../paginas/cirugia-bucal.html">Cirugia bucal</a>
+                            <li><a href="#">Cirugia bucal</a>
                                 <ul>
-                                    <li><a href="../paginas/terceros-molares.html">Terceros molares</a></li>
-                                    <li><a href="../paginas/bichectomia.html">Bichectomia</a></li>
-                                    <li><a href="../paginas/injertos.html">Injertos</a></li>
-                                    <li><a href="../paginas/cirugia-ortonagtica.html">Cirugía ortonagtica</a></li>
+                                    <li><a href="../paginas/vista-servicio/terceros-molares.html">Terceros molares</a></li>
+                                    <li><a href="../paginas/vista-servicio/bichectomia.html">Bichectomia</a></li>
+                                    <li><a href="../paginas/vista-servicio/injertos.html">Injertos</a></li>
+                                    <li><a href="../paginas/vista-servicio/cirugia-ortonagtica.html">Cirugía ortonagtica</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../paginas/ortodoncia.html">Ortodoncia</a>
+                            <li><a href="../paginas/vista-servicio/ortodoncia.html">Ortodoncia</a>
                                 <ul>
-                                    <li><a href="../paginas/tipos-de-brackets.html">Tipos de brackets</a>
+                                    <li><a href="#">Tipos de brackets</a>
                                         <ul>
-                                            <li><a href="../paginas/brackets-convencionales.html">Brackets convencionales</a></li>
-                                            <li><a href="../paginas/brackets-autolegibles.html">Brackets autoligables</a></li>
-                                            <li><a href="../paginas/brackets-de-zafiro.html">Brackets de zafiro</a></li>
+                                            <li><a href="../paginas/vista-servicio/brackets-convencionales.html">Brackets convencionales</a></li>
+                                            <li><a href="../paginas/vista-servicio/brackets-autolegibles.html">Brackets autoligables</a></li>
+                                            <li><a href="../paginas/vista-servicio/brackets-de-zafiro.html">Brackets de zafiro</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="../paginas/ortopedia-maxilar.html">Ortopedia maxilar</a></li>
+                                    <li><a href="../paginas/vista-servicio/ortopedia-maxilar.html">Ortopedia maxilar</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -212,65 +211,65 @@
                   <li><a href="../paginas/servicios.html">Servicios<span class="arrow">&#9660;</span></a>
                       <ul>
                           <li>
-                            <a href="../paginas/operatoria.html">Operatoria<span class="arrow">&#9660;</span></a></li>
+                            <a href="#">Operatoria<span class="arrow">&#9660;</span></a>
                             <ul>
-                              <li><a href="../paginas/resinas.html">Resinas<span class="arrow">&#9660;</span></a></li>
-                              <li><a href="../paginas/incrustaciones.html">Incrustaciones<span class="arrow">&#9660;</span></a></li>
+                              <li><a href="../paginas/vista-servicio/resinas.html">Resinas<span class="arrow">&#9660;</span></a></li>
+                              <li><a href="../paginas/vista-servicio/incrustaciones.html">Incrustaciones<span class="arrow">&#9660;</span></a></li>
                             </ul>
                           </li>
-                          <li><a href="../paginas/endodoncia.html">Endodoncia<span class="arrow">&#9660;</span></a></li></li>
-                          <li><a href="../paginas/prostodoncia.html">Prostodoncia<span class="arrow">&#9660;</span></a>
+                          <li><a href="../paginas/vista-servicio/endodoncia.html">Endodoncia<span class="arrow">&#9660;</span></a></li></li>
+                          <li><a href="../paginas/vista-servicio/prostodoncia.html">Prostodoncia<span class="arrow">&#9660;</span></a>
                               <ul>
-                                  <li><a href="../paginas/protesis-fija.html">Protesis fija<span class="arrow">&#9660;</span></a>
+                                  <li><a href="../paginas/vista-servicio/protesis-fija.html">Protesis fija<span class="arrow">&#9660;</span></a>
                                       <ul>
-                                          <li><a href="../paginas/coronas.html">Coronas<span class="arrow">&#9660;</span></a></li>
-                                          <li><a href="../paginas/carillas.html">Carillas<span class="arrow">&#9660;</span></a></li>
-                                          <li><a href="../paginas/implantes.html">Implantes<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/vista-servicio/coronas.html">Coronas<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/vista-servicio/carillas.html">Carillas<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/vista-servicio/implantes.html">Implantes<span class="arrow">&#9660;</span></a></li>
                                       </ul>
                                   </li>
-                                  <li><a href="../paginas/protesis-removible.html">Protesis removible<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/protesis-total.html">Protesis total<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/protesis-removible.html">Protesis removible<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/protesis-total.html">Protesis total<span class="arrow">&#9660;</span></a></li>
                               </ul>
                           </li>
-                          <li><a href="../paginas/periodoncia.html">Periodoncia<span class="arrow">&#9660;</span></a>
+                          <li><a href="../paginas/vista-servicio/periodoncia.html">Periodoncia<span class="arrow">&#9660;</span></a>
                               <ul>
-                                  <li><a href="../paginas/gingivectomia.html">Gingivectomia<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/gingivoplastia.html">Gingivoplastia<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/alargamiento-de-corona.html">Alargamiento de corona<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/frenectomia.html">Frenectomia<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/curetaje.html">Curetaje<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/gingivectomia.html">Gingivectomia<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/gingivoplastia.html">Gingivoplastia<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/alargamiento-de-corona.html">Alargamiento de corona<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/frenectomia.html">Frenectomia<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/curetaje.html">Curetaje<span class="arrow">&#9660;</span></a></li>
                               </ul>
                           </li>
-                          <li><a href="../paginas/estetica.html">Estetica<span class="arrow">&#9660;</span></a>
+                          <li><a href="#">Estetica<span class="arrow">&#9660;</span></a>
                               <ul>
-                                  <li><a href="../paginas/blanqueamiento.html">Blanqueamiento<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/blanqueamiento.html">Blanqueamiento<span class="arrow">&#9660;</span></a></li>
                               </ul>
                           </li>
-                          <li><a href="../paginas/odontopediatria.html">Odontopediatria<span class="arrow">&#9660;</span></a>
+                          <li><a href="../paginas/vista-servicio/odontopediatria.html">Odontopediatria<span class="arrow">&#9660;</span></a>
                               <ul>
-                                  <li><a href="../paginas/selladores-fosetas-y-fisuras.html">Selladores, fosetas y fisuras<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/barnices-de-fluor.html">Barnices de flúor<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/coronas-infantiles.html">Coronas infantiles<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/selladores-fosetas-y-fisuras.html">Selladores, fosetas y fisuras<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/barnices-de-fluor.html">Barnices de flúor<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/coronas-infantiles.html">Coronas infantiles<span class="arrow">&#9660;</span></a></li>
                               </ul>
                           </li>
-                          <li><a href="../paginas/cirugia-bucal.html">Cirugia bucal<span class="arrow">&#9660;</span></a>
+                          <li><a href="#">Cirugia bucal<span class="arrow">&#9660;</span></a>
                               <ul>
-                                  <li><a href="../paginas/terceros-molares.hmtl">Terceros molares<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/bichectomia.html">Bichectomia<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/injertos.html">Injertos<span class="arrow">&#9660;</span></a></li>
-                                  <li><a href="../paginas/cirugia-ortonagtica.html">Cirugía ortonagtica<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/terceros-molares.html">Terceros molares<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/bichectomia.html">Bichectomia<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/injertos.html">Injertos<span class="arrow">&#9660;</span></a></li>
+                                  <li><a href="../paginas/vista-servicio/cirugia-ortonagtica.html">Cirugía ortonagtica<span class="arrow">&#9660;</span></a></li>
                               </ul>
                           </li>
-                          <li><a href="../paginas/ortodoncia.html">Ortodoncia<span class="arrow">&#9660;</span></a>
+                          <li><a href="../paginas/vista-servicio/ortodoncia.html">Ortodoncia<span class="arrow">&#9660;</span></a>
                               <ul>
-                                  <li><a href="../paginas/tipos-de-brackets.html">Tipos de brackets<span class="arrow">&#9660;</span></a>
+                                  <li><a href="#">Tipos de brackets<span class="arrow">&#9660;</span></a>
                                       <ul>
-                                          <li><a href="../paginas/brackets-convencionales.html">Brackets convencionales<span class="arrow">&#9660;</span></a></li>
-                                          <li><a href="../paginas/brackets-autolegibles.html">Brackets autoligables<span class="arrow">&#9660;</span></a></li>
-                                          <li><a href="../paginas/brackets-de-zafiro.html">Brackets de zafiro<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/vista-servicio/brackets-convencionales.html">Brackets convencionales<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/vista-servicio/brackets-autolegibles.html">Brackets autoligables<span class="arrow">&#9660;</span></a></li>
+                                          <li><a href="../paginas/vista-servicio/brackets-de-zafiro.html">Brackets de zafiro<span class="arrow">&#9660;</span></a></li>
                                       </ul>
                                   </li>
-                                  <li><a href="../paginas/ortopedia-maxilar.html">Ortopedia maxilar</a></li>
+                                  <li><a href="../paginas/vista-servicio/ortopedia-maxilar.html">Ortopedia maxilar</a></li>
                               </ul>
                           </li>
                       </ul>
@@ -282,140 +281,135 @@
           </div>
         </nav>
       </div>
-    </header>
-    <!-- ./Header -->
+    </header><!-- .header -->
 
-    <!-- Main holder -->
     <div class="main-holder">
-      <!-- Content holder -->
       <div class="content-holder clearfix">
-        <!-- Contact -->
         <div class="container contact">
           <div class="row">
+            
             <div class="col-xs-12">
               <h1 class="location">Contacto</h1>
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
                 <li class="breadcrumb-item active">Contacto</li>
               </ol>
-            </div>
-          </div>
-          <div class="row content">
-            <div class="col-xs-12">
+            </div><!-- .col-xs-12 -->
+            
+            <div class="content">
               <div class="type-page">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="google-map">
-                      <h5>Clinica Ciudad del Valle</h5>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d928.1201056332577!2d-104.88625081185018!3d21.488894299105063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842737222d34d0a5%3A0x18f2846b3be6ec15!2sClinica+Ciudad+del+Valle!5e0!3m2!1sen!2smx!4v1519675309681" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe>
-                    </div>
-                    <address>
-                      <strong>
-                        Venecia #108 Interior #3
-                      </strong>
-                      <br>
+    
+                <div class="col-xs-12 col-sm-6">
+                  <h5>Clinica Ciudad del Valle</h5>
+                  <address>
+                    <strong>
+                      Venecia #108 Interior #3
+                    </strong>
+                    <br>
                       Teléfono: 311-133-62-16<br>
                       Celular: 311-144-16-86<br>
-                      <br>
-                    </address>
+                    <br>
+                  </address>
+                </div><!-- .col-xs-12 -->
+    
+                <div class="col-xs-12 col-sm-6">
+                  <h5>Clinica Xalisco</h5>
+                  <address>
+                    <strong>
+                    Porfirio Diaz 28-b entre Hidalgo y Monterrey 
+                    </strong>
+                    <br>
+                    Celular: 311-145-48-65, 311-199-22-49 y 311-134-32-09<br>
+                    <br>
+                  </address>
+                </div><!-- .col-xs-12 -->
+    
+                <div class="col-xs-12">
+                  <div class="google-map">
+                    <div id="mapa"></div>
                   </div>
-                  <div class="col-xs-12">
-                    <div class="google-map">
-                      <h5>Clinica Xalisco</h5>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1856.7934387986809!2d-104.90098728543028!3d21.4454772969773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84273122427ad793%3A0x27f892f204f21f6f!2sClinica+Xalisco!5e0!3m2!1sen!2smx!4v1519674960189" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe>
-                    </div>
-                    <address>
-                      <strong>
-                        Porfirio Diaz 28-b entre Hidalgo y Monterrey 
-                      </strong>
-                      <br>
-                      Celular: 311-145-48-65, 311-199-22-49 y 311-134-32-09<br>
-                      <br>
-                    </address>
-                  </div>
-                  <div class="col-xs-12 col-sm-4">
+                </div><!-- .col-xs-12 -->
                     
-                    <div class="datas">
-                      <h4>HORARIOS</h4>
-                      <div class="group">
-                        <strong>
-                          Lunes a Sabado
-                        </strong><br>
-                        <p>9:00 am - 2:00 pm</p>
-                        <p>4:00 pm - 8:00 pm</p>
+                <div class="col-xs-12 col-sm-4">
+                  <div class="datas">
+                    <h4>HORARIOS</h4>
+                    <div class="group">
+                      <strong>
+                        Lunes a Sabado
+                      </strong><br>
+                      <p>9:00 am - 2:00 pm</p>
+                      <p>4:00 pm - 8:00 pm</p>
+                    </div><!-- .group -->
+                    <div class="group">
+                      <strong>
+                      Domingo
+                      </strong><br>
+                      <p>9:00 am - 2:00 pm</p>
+                    </div><!-- .group -->
+                  </div><!-- .datas -->
+                  <div class="datas">
+                    <h4>REDES SOCIALES </h4>
+                    <div class="group">
+                      <strong>
+                      Facebook
+                      </strong>
+                      <p>Dental Orthodontics especializada/Cd del valle</p>
+                      <p>Dental Orthodontics especializada/Xalisco</p>
+                    </div><!-- .group -->
+                    <div class="group">
+                      <strong>
+                      Instagram
+                      </strong>
+                      <p>Dental Orthodontics especializada</p>
+                    </div><!-- .group -->
+                  </div><!-- .datas -->
+                </div><!-- .col-xs-12 -->
+    
+                <div class="col-xs-12 col-sm-8">
+                  <h2>Formulario de contacto</h2>
+                  <div class="wrapper-form">
+                    <form method="post" action="../php/emailprocess.php" id="contact" class="wpcf-form">
+                      <div class="form-group col-xs-12 col-sm-4">
+                        <label class="sr-only" for="name">Nombre:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre:">
                       </div>
-                      <div class="group">
-                        <strong>
-                        Domingo
-                        </strong><br>
-                        <p>9:00 am - 2:00 pm</p>
+                      <div class="form-group col-xs-12 col-sm-4">
+                        <label class="sr-only" for="email">Correo:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Correo:">
                       </div>
-                    </div>
-                    <div class="datas">
-                      <h4>REDES SOCIALES </h4>
-                      <div class="group">
-                        <strong>
-                        Facebook
-                        </strong>
-                        <p>Dental Orthodontics especializada/Cd del valle</p>
-                        <p>Dental Orthodontics especializada/Xalisco</p>
+                      <div class="form-group col-xs-12 col-sm-4">
+                        <label class="sr-only" for="phone">Teléfono:</label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Teléfono:">
                       </div>
-                      <div class="group">
-                        <strong>
-                        Instagram
-                        </strong>
-                        <p>Dental Orthodontics especializada</p>
+                      <div class="form-group col-xs-12">
+                        <label class="sr-only" for="message">Mensaje:</label>
+                        <textarea class="form-control" cols="40" rows="10" id="message" name="message" placeholder="Mensaje:"></textarea>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-8">
-                    <h2>Formulario de contacto</h2>
-                    <div class="wrapper-form">
-                      <form method="post" action="../php/emailprocess.php" id="contact" class="wpcf-form">
-                        <div class="form-group col-xs-12 col-sm-4">
-                          <label class="sr-only" for="name">Nombre:</label>
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Nombre:">
-                        </div>
-                        <div class="form-group col-xs-12 col-sm-4">
-                          <label class="sr-only" for="email">Correo:</label>
-                          <input type="email" class="form-control" id="email" name="email" placeholder="Correo:">
-                        </div>
-                        <div class="form-group col-xs-12 col-sm-4">
-                          <label class="sr-only" for="phone">Teléfono:</label>
-                          <input type="text" class="form-control" id="phone" name="phone" placeholder="Teléfono:">
-                        </div>
-                        <div class="form-group col-xs-12">
-                          <label class="sr-only" for="message">Mensaje:</label>
-                          <textarea class="form-control" cols="40" rows="10" id="message" name="message" placeholder="Mensaje:"></textarea>
-                        </div>
-                        <div class="form-group submit-wrap">
-                          <input type="reset" value="Borrar" class="btn btn-primary ">
-                          <input type="submit" value="Enviar" class="btn btn-primary" name="send">
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ./Contact -->
-      </div>
-      <!-- Content holder -->
-    </div>
-    <!-- Main holder -->
+                      <div class="form-group submit-wrap">
+                        <input type="reset" value="Borrar" class="btn btn-primary ">
+                        <input type="submit" value="Enviar" class="btn btn-primary" name="send">
+                      </div>
+                    </form>
+                  </div><!-- .wrapper-form -->
+                </div><!-- .col-xs-12 -->
+                
+              </div><!-- .type-page -->
+            </div><!-- .content -->
+          </div><!-- .row -->
+        </div><!-- .contact -->
+      </div><!-- .content-holder -->
+    </div><!-- .main-holder -->
+    
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-4 copyright">
-            <h4>Copyright</h4>
-            <a href="#"><img src="../imagenes/logo-smile-footer.png"></a>
+            <h4>Derecho de autor</h4>
+            <a href="../index.html"><h6>OrtodonciaDental</h6></a>
             <span>
-              <a href="#">Smile</a> © 2018 • 
-              <a href="#">Privacy Policy</a>
+              <a href="../index.html">OrtodonciaDental</a> © 2018 • 
+              <a href="#">Política de privacidad</a>
             </span>
           </div>
           <div class="col-xs-12 col-sm-4 about-us">
@@ -475,23 +469,23 @@ Queremos convertirnos en ...</p>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- ./Footer -->
+    </footer><!-- .footer -->
 
-    <!-- Visible desktop button -->
     <div id="back-top-wrapper" class="visible-desktop">
       <p id="back-top">
         <a id="back-to-top"><span></span></a>
       </p>
-    </div>
-    <!-- ./Visible desktop button -->
-  </div>
-  <!-- ./Page -->
+    </div><!-- .visible-desktop -->
+    
+  </div><!-- .page -->
 
   <script src="../js/jquery.js"></script>
   <script src="../js/jquery.mmenu.all.js"></script>
   <script src="../js/bootstrap.js"></script>
   <script src="../js/jquery.twbsPagination.js" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG6MgXGJpetWhwrnSSOS6wD7Vz1S1LYBg&callback=initMap"
+    async defer></script>
+  <script src="../js/map.js" ></script>
   <script src="../js/scripts.js" ></script>
 </body>
 </html>
