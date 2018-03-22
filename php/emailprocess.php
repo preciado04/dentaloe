@@ -23,7 +23,7 @@ $params['client_email'] = trim($_POST['email']);
 $params['client_phone'] = trim($_POST['phone']);
 $params['client_message'] = trim($_POST['message']);
 $params['company_name'] = "Ortodoncia Dental Especializada";
-$params['company_email'] = "dental.orthodontics01@gmail.com";
+$params['company_email'] = "preciado0425@gmail.com";
 if (!dentaloe_mail_client($params)) {
   $warning_alert = 'algo salio mal jefe';
   header("Location: ../paginas/contacto.php?false=$warning_alert");
