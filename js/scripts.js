@@ -24,6 +24,14 @@ API.bind('close:finish', function () {
   }, 100);
 });
 
+// Close menu on click on menu item.
+/*
+$(document).on('click', 'nav#menu a', function() {
+  API.close();
+  $('.hamburger').removeClass('is-active');
+});
+*/
+
 $(document).ready(function () {
 
   // When page is loaded, remove the loading.
